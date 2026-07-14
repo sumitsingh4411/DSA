@@ -50,8 +50,15 @@ for the site itself. Node scripts exist only to generate the markdown sheets and
 data; they are developer tools, not a runtime dependency.
 
 Rationale: the site is a filtered list over ~450 records with local persistence. A framework
-would add install friction and a build step without buying anything. Double-clicking
-`index.html` must work.
+would add install friction and a build step without buying anything.
+
+**Correction (made during implementation):** an earlier draft of this spec claimed
+`index.html` would work when double-clicked from disk. It does not, and cannot: browsers block
+both ES modules and `fetch` on the `file://` protocol for CORS reasons. Achieving true
+double-click support would mean inlining all code and data into one HTML file, abandoning the
+module boundaries that make the logic testable. The modules are worth more. The site therefore
+requires an HTTP server — which is what GitHub Pages (the actual requirement) provides, and
+locally is one command: `npm run serve`.
 
 Hosting: GitHub Pages from the repository root.
 
@@ -194,7 +201,7 @@ is a real use case.
 
 ## Success Criteria
 
-1. `index.html` opens and works with no build step and no network beyond the problem links.
+1. The site runs with no build step and no runtime dependencies, served over HTTP.
 2. Every problem link resolves.
 3. Progress survives a reload, and moves between browsers via export/import.
 4. The generated markdown sheets render correctly on GitHub and match `problems.json`.
