@@ -8,7 +8,7 @@ A DSA roadmap for FAANG interviews — foundations to elite, with the tracking b
 > `base` in `vite.config.js` all assume the repo `sumitgithub1001/Advancedsa`. If yours differs,
 > change those three and run `npm run build:sheets`.
 
-Most sheets hand you a list of links and wish you luck. This one is **ordered** — 250 problems
+Most sheets hand you a list of links and wish you luck. This one is **ordered** — 251 problems
 across 20 topics, arranged so each topic sets up the next — and it tells you **which problem to
 solve today**, so you never open it and stall on where to start.
 
@@ -46,14 +46,16 @@ exactly what most sheets leave out.
 [Math & Geometry](content/19-math-geometry.md) ·
 [Hard DP](content/20-dp-hard.md)
 
-Cross-cutting sheets: **[Blind 75](sheets/blind75.md)** · **[Striver SDE](sheets/striver-sde.md)** · **[Love Babbar](sheets/love-babbar.md)** — each on its own.
+Cross-cutting sheets: **[Blind 75](sheets/blind75.md)** · **[NeetCode 150](sheets/neetcode-150.md)** · **[Striver SDE](sheets/striver-sde.md)** · **[Love Babbar](sheets/love-babbar.md)** — each on its own.
 
 Fork the repo and every checkbox becomes yours to tick.
 
 ## Or use the site
 
-Same problems, but it also tells you your next three, tracks solved and starred, filters by
-difficulty and status, and runs a rail down the page that fills as you climb.
+Same problems, but it also tells you your next three, lets you **pick a track** — the full mix,
+one famous sheet on its own, or the **Essential** best-of — jump straight to any **category**,
+tracks solved and starred, filters by difficulty and status, and runs a rail down the page that
+fills as you climb.
 
 Progress is saved in your browser — no account, no server. **Export** moves it between machines.
 
@@ -75,7 +77,7 @@ paywall by surprise. Skip them without guilt; none is load-bearing.
 
 ```
 content/*.md ──┬──> src/content.generated.js ──> the site
-               └──> sheets/{blind75,striver-sde,love-babbar}.md
+               └──> sheets/{blind75,neetcode-150,striver-sde,love-babbar}.md
 ```
 
 Markdown is a fragile thing to use as a database, so the parser is strict on purpose: a bad
@@ -95,7 +97,7 @@ labels, no wrong premium flags.
 npm install
 npm run dev             # Vite dev server, opens the browser
 npm run build           # regenerate data, validate, then build to dist/
-npm test                # 76 tests
+npm test                # 79 tests
 npm run validate        # content/ is well-formed
 npm run validate:links  # ...and every problem is real, per LeetCode
 npm run build:sheets    # regenerate sheets/ from content/

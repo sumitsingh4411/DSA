@@ -13,13 +13,13 @@ order: 18
 
 | Problem | Difficulty | Patterns | Sheets |
 | --- | --- | --- | --- |
-| [Single Number](https://leetcode.com/problems/single-number/) | Easy | xor | Striver SDE, Love Babbar |
-| [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) | Easy | bit-tricks | Blind 75 |
-| [Counting Bits](https://leetcode.com/problems/counting-bits/) | Easy | dp, bit-tricks | Blind 75 |
-| [Reverse Bits](https://leetcode.com/problems/reverse-bits/) | Easy | bit-tricks | Blind 75 |
-| [Missing Number](https://leetcode.com/problems/missing-number/) | Easy | xor, math | Blind 75 |
-| [Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/) | Medium | xor, carry | Blind 75 |
-| [Reverse Integer](https://leetcode.com/problems/reverse-integer/) | Medium | overflow | Love Babbar |
+| [Single Number](https://leetcode.com/problems/single-number/) | Easy | xor | NeetCode 150, Striver SDE, Love Babbar |
+| [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) | Easy | bit-tricks | Blind 75, NeetCode 150 |
+| [Counting Bits](https://leetcode.com/problems/counting-bits/) | Easy | dp, bit-tricks | Blind 75, NeetCode 150 |
+| [Reverse Bits](https://leetcode.com/problems/reverse-bits/) | Easy | bit-tricks | Blind 75, NeetCode 150 |
+| [Missing Number](https://leetcode.com/problems/missing-number/) | Easy | xor, math | Blind 75, NeetCode 150 |
+| [Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/) | Medium | xor, carry | Blind 75, NeetCode 150 |
+| [Reverse Integer](https://leetcode.com/problems/reverse-integer/) | Medium | overflow | NeetCode 150, Love Babbar |
 | [Single Number II](https://leetcode.com/problems/single-number-ii/) | Medium |  | Love Babbar |
 | [Single Number III](https://leetcode.com/problems/single-number-iii/) | Medium |  | Love Babbar |
 | [Divide Two Integers](https://leetcode.com/problems/divide-two-integers/) | Medium |  | Striver SDE |

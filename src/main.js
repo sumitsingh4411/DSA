@@ -1,6 +1,14 @@
 import './app.css';
 import { problems, topics } from './content.generated.js';
-import { groupByTopic, groupBySheet } from './data.js';
+import {
+  groupByTopic,
+  trackProblems,
+  sheetTracks,
+  SHEETS,
+  ESSENTIAL_ID,
+  ESSENTIAL_META,
+  MIX_ID,
+} from './data.js';
 import { createProgress } from './progress.js';
 import { applyFilters, emptyFilterState } from './filters.js';
 import * as ui from './ui.js';
@@ -8,7 +16,10 @@ import * as ui from './ui.js';
 const $ = (sel) => document.querySelector(sel);
 
 const progress = createProgress(window.localStorage);
-const state = { view: 'topic', filters: emptyFilterState() };
+const state = { track: MIX_ID, filters: emptyFilterState() };
+
+const trackLabel = (id) =>
+  id === ESSENTIAL_ID ? ESSENTIAL_META.label : SHEETS[id]?.label ?? 'The Mix';
 
 const handlers = {
   onToggleSolved(id) {
@@ -21,19 +32,58 @@ const handlers = {
   },
 };
 
-function render() {
-  const visible = applyFilters(problems, state.filters, progress);
+function jumpToTopic(topicId) {
+  const target = document.getElementById(`topic-${topicId}`);
+  if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
 
+function pickTrack(id) {
+  state.track = id;
+  render();
+  // Land the reader on the list so the switch feels like it did something.
+  $('#list').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function render() {
+  const inTrack = trackProblems(problems, state.track);
+  const visible = applyFilters(inTrack, state.filters, progress);
+
+  // The recommendation always walks the full roadmap, not the current track.
   ui.renderNext($('#next'), { problems, topics, progress });
-  ui.renderMeter($('#meter'), { problems, progress });
+  ui.renderMeter($('#meter'), { problems: inTrack, progress });
   ui.renderTally($('#tally'), { problems, progress });
 
-  const list = $('#list');
-  if (state.view === 'topic') {
-    ui.renderTopicView(list, groupByTopic(visible, topics, progress), progress, handlers);
-  } else {
-    ui.renderSheetView(list, groupBySheet(visible, topics, progress), progress, handlers);
-  }
+  const mix = {
+    total: problems.length,
+    solvedCount: problems.filter((p) => progress.isSolved(p.id)).length,
+  };
+  ui.renderTracks($('#tracks'), {
+    tracks: sheetTracks(problems, progress),
+    mix,
+    activeId: state.track,
+    onPick: pickTrack,
+  });
+
+  // Categories reflect the current track, unfiltered, so jumping always works.
+  ui.renderCategories($('#cats-grid'), {
+    groups: groupByTopic(inTrack, topics, progress),
+    onJump: jumpToTopic,
+  });
+
+  const heading =
+    state.track === MIX_ID
+      ? null
+      : {
+          title: trackLabel(state.track),
+          sub:
+            state.track === ESSENTIAL_ID
+              ? ESSENTIAL_META.blurb
+              : SHEETS[state.track]?.blurb ?? '',
+        };
+
+  ui.renderTopicView($('#list'), groupByTopic(visible, topics, progress), progress, handlers, {
+    heading,
+  });
 }
 
 /* ---------- theme ---------- */
@@ -50,20 +100,6 @@ $('#theme').addEventListener('click', () => {
   document.documentElement.dataset.theme = next;
   localStorage.setItem(THEME_KEY, next);
 });
-
-/* ---------- view switch ---------- */
-
-for (const btn of document.querySelectorAll('.views__btn')) {
-  btn.addEventListener('click', () => {
-    state.view = btn.dataset.view;
-    for (const other of document.querySelectorAll('.views__btn')) {
-      const on = other === btn;
-      other.classList.toggle('is-on', on);
-      other.setAttribute('aria-selected', String(on));
-    }
-    render();
-  });
-}
 
 /* ---------- filters ---------- */
 

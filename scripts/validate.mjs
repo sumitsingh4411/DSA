@@ -6,7 +6,7 @@
 import { loadContent } from './parse-content.mjs';
 
 const DIFFICULTIES = new Set(['Easy', 'Medium', 'Hard']);
-const SHEET_SIZES = { blind75: 75 };
+const SHEET_SIZES = { blind75: 75, 'neetcode-150': 150 };
 
 const LEETCODE_INDEX = 'https://leetcode.com/api/problems/all/';
 const LEVEL = { 1: 'Easy', 2: 'Medium', 3: 'Hard' };

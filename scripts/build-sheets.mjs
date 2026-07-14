@@ -73,6 +73,7 @@ async function main() {
 
   const sheets = {
     blind75: 'Blind 75',
+    'neetcode-150': 'NeetCode 150',
     'striver-sde': 'Striver SDE Sheet',
     'love-babbar': 'Love Babbar Sheet',
   };

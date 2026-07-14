@@ -13,19 +13,19 @@ order: 5
 
 | Problem | Difficulty | Patterns | Sheets |
 | --- | --- | --- | --- |
-| [Binary Search](https://leetcode.com/problems/binary-search/) | Easy | binary-search |  |
+| [Binary Search](https://leetcode.com/problems/binary-search/) | Easy | binary-search | NeetCode 150 |
 | [Sqrt(x)](https://leetcode.com/problems/sqrtx/) | Easy | binary-search | Striver SDE, Love Babbar |
 | [Search Insert Position](https://leetcode.com/problems/search-insert-position/) | Easy |  | Striver SDE |
 | [Kth Missing Positive Number](https://leetcode.com/problems/kth-missing-positive-number/) | Easy |  | Striver SDE |
-| [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/) | Medium | binary-search, matrix |  |
-| [Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/) | Medium | search-the-answer |  |
-| [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) | Medium | binary-search | Blind 75 |
-| [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | Medium | binary-search | Blind 75 |
-| [Time Based Key-Value Store](https://leetcode.com/problems/time-based-key-value-store/) | Medium | design |  |
+| [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/) | Medium | binary-search, matrix | NeetCode 150 |
+| [Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/) | Medium | search-the-answer | NeetCode 150 |
+| [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) | Medium | binary-search | Blind 75, NeetCode 150 |
+| [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | Medium | binary-search | Blind 75, NeetCode 150 |
+| [Time Based Key-Value Store](https://leetcode.com/problems/time-based-key-value-store/) | Medium | design | NeetCode 150 |
 | [Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | Medium |  | Striver SDE, Love Babbar |
 | [Find Peak Element](https://leetcode.com/problems/find-peak-element/) | Medium | binary-search | Striver SDE |
 | [Single Element in a Sorted Array](https://leetcode.com/problems/single-element-in-a-sorted-array/) | Medium |  | Striver SDE |
-| [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/) | Hard | binary-search, partition |  |
+| [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/) | Hard | binary-search, partition | NeetCode 150 |
 | [Split Array Largest Sum](https://leetcode.com/problems/split-array-largest-sum/) | Hard |  | Striver SDE |
 
 🔒 = needs LeetCode Premium. Links go to LeetCode or GeeksforGeeks.

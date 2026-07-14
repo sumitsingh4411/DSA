@@ -13,15 +13,15 @@ order: 3
 
 | Problem | Difficulty | Patterns | Sheets |
 | --- | --- | --- | --- |
-| [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Easy | greedy | Blind 75, Striver SDE, Love Babbar |
+| [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Easy | greedy | Blind 75, NeetCode 150, Striver SDE, Love Babbar |
 | [First Negative Integer in Every Window of Size K](https://www.geeksforgeeks.org/problems/first-negative-integer-in-every-window-of-size-k3345/1) | Easy |  | Love Babbar |
-| [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | Medium | hash-set | Blind 75, Striver SDE, Love Babbar |
-| [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/) | Medium | counting | Blind 75 |
-| [Permutation in String](https://leetcode.com/problems/permutation-in-string/) | Medium | counting |  |
+| [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | Medium | hash-set | Blind 75, NeetCode 150, Striver SDE, Love Babbar |
+| [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/) | Medium | counting | Blind 75, NeetCode 150 |
+| [Permutation in String](https://leetcode.com/problems/permutation-in-string/) | Medium | counting | NeetCode 150 |
 | [Fruit Into Baskets](https://leetcode.com/problems/fruit-into-baskets/) | Medium |  | Striver SDE |
 | [Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/) | Medium |  | Striver SDE |
-| [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) | Hard | hash-map | Blind 75 |
-| [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/) | Hard | monotonic-deque | Striver SDE, Love Babbar |
+| [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) | Hard | hash-map | Blind 75, NeetCode 150 |
+| [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/) | Hard | monotonic-deque | NeetCode 150, Striver SDE, Love Babbar |
 | [Subarrays with K Different Integers](https://leetcode.com/problems/subarrays-with-k-different-integers/) | Hard |  | Striver SDE |
 
 🔒 = needs LeetCode Premium. Links go to LeetCode or GeeksforGeeks.

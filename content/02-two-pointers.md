@@ -13,14 +13,14 @@ order: 2
 
 | Problem | Difficulty | Patterns | Sheets |
 | --- | --- | --- | --- |
-| [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | Easy | two-pointers | Blind 75 |
+| [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | Easy | two-pointers | Blind 75, NeetCode 150 |
 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | Easy |  | Striver SDE |
-| [Two Sum II — Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | Medium | two-pointers |  |
-| [3Sum](https://leetcode.com/problems/3sum/) | Medium | two-pointers, sorting | Blind 75, Striver SDE, Love Babbar |
-| [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | Medium | greedy | Blind 75, Striver SDE |
+| [Two Sum II — Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | Medium | two-pointers | NeetCode 150 |
+| [3Sum](https://leetcode.com/problems/3sum/) | Medium | two-pointers, sorting | Blind 75, NeetCode 150, Striver SDE, Love Babbar |
+| [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | Medium | greedy | Blind 75, NeetCode 150, Striver SDE |
 | [4Sum](https://leetcode.com/problems/4sum/) | Medium | two-pointers | Striver SDE, Love Babbar |
 | [3Sum Closest](https://leetcode.com/problems/3sum-closest/) | Medium |  | Striver SDE |
-| [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) | Hard | two-pointers, monotonic-stack | Striver SDE, Love Babbar |
+| [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) | Hard | two-pointers, monotonic-stack | NeetCode 150, Striver SDE, Love Babbar |
 
 🔒 = needs LeetCode Premium. Links go to LeetCode or GeeksforGeeks.
 

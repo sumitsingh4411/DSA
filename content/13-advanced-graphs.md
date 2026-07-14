@@ -13,16 +13,16 @@ order: 13
 
 | Problem | Difficulty | Patterns | Sheets |
 | --- | --- | --- | --- |
-| [Network Delay Time](https://leetcode.com/problems/network-delay-time/) | Medium | dijkstra |  |
-| [Min Cost to Connect All Points](https://leetcode.com/problems/min-cost-to-connect-all-points/) | Medium | mst, prim |  |
-| [Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/) | Medium | bellman-ford |  |
+| [Network Delay Time](https://leetcode.com/problems/network-delay-time/) | Medium | dijkstra | NeetCode 150 |
+| [Min Cost to Connect All Points](https://leetcode.com/problems/min-cost-to-connect-all-points/) | Medium | mst, prim | NeetCode 150 |
+| [Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/) | Medium | bellman-ford | NeetCode 150 |
 | [Shortest Path in Binary Matrix](https://leetcode.com/problems/shortest-path-in-binary-matrix/) | Medium |  | Striver SDE |
 | [Path With Minimum Effort](https://leetcode.com/problems/path-with-minimum-effort/) | Medium |  | Striver SDE |
 | [Accounts Merge](https://leetcode.com/problems/accounts-merge/) | Medium | union-find | Striver SDE |
 | [Number of Operations to Make Network Connected](https://leetcode.com/problems/number-of-operations-to-make-network-connected/) | Medium |  | Striver SDE |
-| [Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary/) | Hard | eulerian-path, dfs |  |
-| [Swim in Rising Water](https://leetcode.com/problems/swim-in-rising-water/) | Hard | dijkstra, binary-search |  |
-| [Alien Dictionary](https://leetcode.com/problems/alien-dictionary/) 🔒 | Hard | topological-sort | Blind 75, Striver SDE, Love Babbar |
+| [Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary/) | Hard | eulerian-path, dfs | NeetCode 150 |
+| [Swim in Rising Water](https://leetcode.com/problems/swim-in-rising-water/) | Hard | dijkstra, binary-search | NeetCode 150 |
+| [Alien Dictionary](https://leetcode.com/problems/alien-dictionary/) 🔒 | Hard | topological-sort | Blind 75, NeetCode 150, Striver SDE, Love Babbar |
 
 🔒 = needs LeetCode Premium. Links go to LeetCode or GeeksforGeeks.
 

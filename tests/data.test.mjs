@@ -1,6 +1,14 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { groupByTopic, groupBySheet, SHEETS } from '../src/data.js';
+import {
+  groupByTopic,
+  trackProblems,
+  sheetTracks,
+  isEssential,
+  SHEETS,
+  ESSENTIAL_ID,
+  MIX_ID,
+} from '../src/data.js';
 
 const topics = [
   { id: 'graphs', name: 'Graphs', tier: 3, order: 12 },
@@ -9,9 +17,9 @@ const topics = [
 ];
 
 const problems = [
-  { id: 'num-islands', difficulty: 'Medium', topic: 'graphs', sheets: ['blind75'] },
-  { id: 'group-anagrams', difficulty: 'Medium', topic: 'arrays-hashing', sheets: ['blind75'] },
-  { id: 'two-sum', difficulty: 'Easy', topic: 'arrays-hashing', sheets: [] },
+  { id: 'num-islands', difficulty: 'Medium', topic: 'graphs', sheets: ['blind75', 'neetcode-150', 'striver-sde'] },
+  { id: 'group-anagrams', difficulty: 'Medium', topic: 'arrays-hashing', sheets: ['blind75', 'neetcode-150'] },
+  { id: 'two-sum', difficulty: 'Easy', topic: 'arrays-hashing', sheets: ['love-babbar'] },
 ];
 
 const progress = { isSolved: (id) => id === 'two-sum', isStarred: () => false };
@@ -34,20 +42,45 @@ test('problems within a topic are Easy-first', () => {
 test('each group reports how many of its problems are solved', () => {
   const groups = groupByTopic(problems, topics, progress);
   assert.equal(groups[0].solvedCount, 1);
-  assert.equal(groups[0].problems.length, 2);
   assert.equal(groups[1].solvedCount, 0);
 });
 
-test('groupBySheet only returns sheets that have problems', () => {
-  const groups = groupBySheet(problems, topics, progress);
-  assert.deepEqual(groups.map((g) => g.id), ['blind75']);
-  assert.equal(groups[0].label, 'Blind 75');
-  assert.equal(groups[0].problems.length, 2);
-  assert.equal(groups[0].solvedCount, 0);
+test('the Mix track is every problem', () => {
+  assert.equal(trackProblems(problems, MIX_ID).length, 3);
 });
 
-test('SHEETS maps every sheet id to a human label', () => {
-  assert.equal(SHEETS.blind75, 'Blind 75');
-  assert.equal(SHEETS['striver-sde'], 'Striver SDE');
-  assert.equal(SHEETS['love-babbar'], 'Love Babbar');
+test('a sheet track is only that sheet', () => {
+  assert.deepEqual(trackProblems(problems, 'blind75').map((p) => p.id), ['num-islands', 'group-anagrams']);
+  assert.deepEqual(trackProblems(problems, 'love-babbar').map((p) => p.id), ['two-sum']);
+});
+
+test('Essential = on three or more sheets', () => {
+  assert.equal(isEssential(problems[0]), true, 'num-islands is on 3 sheets');
+  assert.equal(isEssential(problems[1]), false, 'group-anagrams is on 2');
+  assert.deepEqual(trackProblems(problems, ESSENTIAL_ID).map((p) => p.id), ['num-islands']);
+});
+
+test('sheetTracks lists Essential first, then every sheet, each with live counts', () => {
+  const tracks = sheetTracks(problems, progress);
+  assert.equal(tracks[0].id, ESSENTIAL_ID);
+  assert.deepEqual(tracks.map((t) => t.id), [
+    'essential',
+    'blind75',
+    'neetcode-150',
+    'striver-sde',
+    'love-babbar',
+  ]);
+  const babbar = tracks.find((t) => t.id === 'love-babbar');
+  assert.equal(babbar.total, 1);
+  assert.equal(babbar.solvedCount, 1);
+});
+
+test('every sheet has a label, a short monogram, and a blurb', () => {
+  for (const [id, meta] of Object.entries(SHEETS)) {
+    assert.ok(meta.label, `${id} needs a label`);
+    assert.ok(meta.short, `${id} needs a short monogram`);
+    assert.ok(meta.blurb, `${id} needs a blurb`);
+  }
+  assert.equal(SHEETS.blind75.label, 'Blind 75');
+  assert.equal(SHEETS['neetcode-150'].short, 'N150');
 });

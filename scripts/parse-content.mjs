@@ -10,6 +10,7 @@ import { readFile, writeFile, readdir } from 'node:fs/promises';
 
 export const SHEET_IDS = {
   'Blind 75': 'blind75',
+  'NeetCode 150': 'neetcode-150',
   'Striver SDE': 'striver-sde',
   'Love Babbar': 'love-babbar',
 };

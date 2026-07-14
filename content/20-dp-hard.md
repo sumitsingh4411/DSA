@@ -13,13 +13,13 @@ order: 20
 
 | Problem | Difficulty | Patterns | Sheets |
 | --- | --- | --- | --- |
-| [Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/) | Medium | state-machine |  |
+| [Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/) | Medium | state-machine | NeetCode 150 |
 | [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/) | Medium |  | Striver SDE, Love Babbar |
 | [Partition Array for Maximum Sum](https://leetcode.com/problems/partition-array-for-maximum-sum/) | Medium |  | Striver SDE |
-| [Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/) | Hard | grid-dp | Striver SDE |
-| [Longest Increasing Path in a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/) | Hard | memoised-dfs |  |
-| [Burst Balloons](https://leetcode.com/problems/burst-balloons/) | Hard | interval-dp |  |
-| [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/) | Hard | grid-dp |  |
+| [Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/) | Hard | grid-dp | NeetCode 150, Striver SDE |
+| [Longest Increasing Path in a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/) | Hard | memoised-dfs | NeetCode 150 |
+| [Burst Balloons](https://leetcode.com/problems/burst-balloons/) | Hard | interval-dp | NeetCode 150 |
+| [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/) | Hard | grid-dp | NeetCode 150 |
 | [Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/) | Hard |  | Striver SDE |
 | [Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/) | Hard |  | Striver SDE |
 

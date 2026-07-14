@@ -1,4 +1,4 @@
-import { SHEETS, TIER_NAMES } from './data.js';
+import { SHEETS, TIER_NAMES, isEssential } from './data.js';
 import { nextProblems } from './recommend.js';
 
 // The only module that touches the DOM.
@@ -51,9 +51,11 @@ export function renderRow(p, progress, handlers) {
   link.textContent = p.title;
 
   const tags = el('span', 'row__tags');
-  for (const pattern of p.patterns ?? []) {
+
+  // One pattern tag, so the row stays scannable; the rest live on the problem page.
+  if (p.patterns?.[0]) {
     const t = el('span', 'tag');
-    t.textContent = pattern;
+    t.textContent = p.patterns[0];
     tags.append(t);
   }
   if (p.premium) {
@@ -62,12 +64,24 @@ export function renderRow(p, progress, handlers) {
     t.title = 'Needs a LeetCode Premium subscription to open';
     tags.append(t);
   }
-  for (const sheet of p.sheets ?? []) {
-    const t = el('span', 'tag tag--sheet');
-    t.textContent = SHEETS[sheet] ?? sheet;
-    tags.append(t);
+
+  // Sheet membership as compact monograms rather than full-width badges.
+  const monos = el('span', 'monos');
+  if (isEssential(p)) {
+    const m = el('span', 'mono mono--essential');
+    m.textContent = '★';
+    m.title = 'Essential Mix — on three or more sheets';
+    monos.append(m);
   }
-  tags.append(difficulty(p));
+  for (const sheet of p.sheets ?? []) {
+    const meta = SHEETS[sheet];
+    if (!meta) continue;
+    const m = el('span', `mono mono--${sheet}`);
+    m.textContent = meta.short;
+    m.title = meta.label;
+    monos.append(m);
+  }
+  tags.append(monos, difficulty(p));
 
   row.append(tick, star, link, tags);
   return row;
@@ -172,17 +186,92 @@ export function renderMeter(root, { problems, progress }) {
   root.append(head, track, split);
 }
 
-export function renderTopicView(root, groups, progress, handlers) {
+// The track picker: the mix, the best-of, or one famous sheet on its own.
+export function renderTracks(root, { tracks, mix, activeId, onPick }) {
   root.replaceChildren();
+
+  const card = (id, label, blurb, solved, total, extraClass = '') => {
+    const c = el('button', `track ${extraClass}${id === activeId ? ' is-on' : ''}`);
+    c.type = 'button';
+    c.setAttribute('aria-pressed', String(id === activeId));
+    c.addEventListener('click', () => onPick(id));
+
+    const top = el('span', 'track__top');
+    const name = el('span', 'track__name');
+    name.textContent = label;
+    const count = el('span', 'track__count');
+    count.textContent = `${solved}/${total}`;
+    top.append(name, count);
+
+    const bar = el('span', 'track__bar');
+    const fill = el('span', 'track__fill');
+    fill.style.width = `${pct(solved, total)}%`;
+    bar.append(fill);
+
+    const desc = el('span', 'track__blurb');
+    desc.textContent = blurb;
+
+    c.append(top, bar, desc);
+    return c;
+  };
+
+  root.append(
+    card('all', 'The Mix', 'Every problem from every sheet, merged into one beginner-to-advanced roadmap.', mix.solvedCount, mix.total, 'track--mix'),
+  );
+  for (const t of tracks) {
+    root.append(card(t.id, t.label, t.blurb, t.solvedCount, t.total, t.id === 'essential' ? 'track--essential' : ''));
+  }
+}
+
+// The category jump grid — click a card, land on that topic.
+export function renderCategories(root, { groups, onJump }) {
+  root.replaceChildren();
+
+  for (const g of groups) {
+    const done = g.solvedCount === g.problems.length && g.problems.length > 0;
+    const card = el('button', `cat${done ? ' is-done' : ''}`);
+    card.type = 'button';
+    card.addEventListener('click', () => onJump(g.topic.id));
+
+    const name = el('span', 'cat__name');
+    name.textContent = g.topic.name;
+
+    const meta = el('span', 'cat__meta');
+    meta.textContent = `${g.solvedCount}/${g.problems.length}`;
+
+    const bar = el('span', 'cat__bar');
+    const fill = el('span', 'cat__fill');
+    fill.style.width = `${pct(g.solvedCount, g.problems.length)}%`;
+    bar.append(fill);
+
+    card.append(name, bar, meta);
+    root.append(card);
+  }
+}
+
+export function renderTopicView(root, groups, progress, handlers, { heading } = {}) {
+  root.replaceChildren();
+
+  if (heading) {
+    const h = el('div', 'trackhead');
+    const t = el('h2', 'trackhead__title');
+    t.textContent = heading.title;
+    const s = el('p', 'trackhead__sub');
+    s.textContent = heading.sub;
+    h.append(t, s);
+    root.append(h);
+  }
 
   if (groups.length === 0) {
     root.append(emptyState());
     return;
   }
 
+  // Tier bands only make sense on the full mix, where every tier is present.
+  const showTiers = !heading;
   let tier = null;
   for (const group of groups) {
-    if (group.topic.tier !== tier) {
+    if (showTiers && group.topic.tier !== tier) {
       tier = group.topic.tier;
       const band = el('div', 'tier');
       band.append(el('div', 'tier__rail'));
@@ -195,6 +284,7 @@ export function renderTopicView(root, groups, progress, handlers) {
     }
 
     const section = el('section', 'topic');
+    section.id = `topic-${group.topic.id}`;
 
     const rail = el('div', 'topic__rail');
     rail.style.setProperty('--fill', `${pct(group.solvedCount, group.problems.length)}%`);
@@ -214,26 +304,6 @@ export function renderTopicView(root, groups, progress, handlers) {
     body.append(head, insight, rowsOf(group.problems, progress, handlers));
     section.append(rail, body);
     root.append(section);
-  }
-}
-
-export function renderSheetView(root, sheets, progress, handlers) {
-  root.replaceChildren();
-
-  if (sheets.length === 0) {
-    root.append(emptyState());
-    return;
-  }
-
-  for (const sheet of sheets) {
-    const head = el('div', 'sheet__head');
-    const name = el('h2', 'topic__name');
-    name.textContent = sheet.label;
-    const count = el('span', `topic__count${sheet.solvedCount === sheet.problems.length ? ' is-done' : ''}`);
-    count.textContent = `${sheet.solvedCount}/${sheet.problems.length}`;
-    head.append(name, count);
-
-    root.append(head, rowsOf(sheet.problems, progress, handlers));
   }
 }
 

@@ -155,6 +155,7 @@ export const problems = [
     ],
     "sheets": [
       "blind75",
+      "neetcode-150",
       "striver-sde"
     ],
     "source": "leetcode",
@@ -172,6 +173,7 @@ export const problems = [
     ],
     "sheets": [
       "blind75",
+      "neetcode-150",
       "love-babbar"
     ],
     "source": "leetcode",
@@ -188,6 +190,7 @@ export const problems = [
     ],
     "sheets": [
       "blind75",
+      "neetcode-150",
       "striver-sde",
       "love-babbar"
     ],
@@ -299,6 +302,7 @@ export const problems = [
     ],
     "sheets": [
       "blind75",
+      "neetcode-150",
       "striver-sde",
       "love-babbar"
     ],
@@ -317,6 +321,7 @@ export const problems = [
     ],
     "sheets": [
       "blind75",
+      "neetcode-150",
       "striver-sde",
       "love-babbar"
     ],
@@ -333,7 +338,8 @@ export const problems = [
       "design"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "neetcode-150"
     ],
     "source": "leetcode",
     "premium": true,
@@ -349,6 +355,7 @@ export const problems = [
     ],
     "sheets": [
       "blind75",
+      "neetcode-150",
       "striver-sde",
       "love-babbar"
     ],
@@ -365,7 +372,9 @@ export const problems = [
       "hash-set",
       "matrix"
     ],
-    "sheets": [],
+    "sheets": [
+      "neetcode-150"
+    ],
     "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/valid-sudoku/"
@@ -380,6 +389,7 @@ export const problems = [
     ],
     "sheets": [
       "blind75",
+      "neetcode-150",
       "striver-sde",
       "love-babbar"
     ],
@@ -510,7 +520,8 @@ export const problems = [
       "two-pointers"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "neetcode-150"
     ],
     "source": "leetcode",
     "premium": false,
@@ -537,7 +548,9 @@ export const problems = [
     "patterns": [
       "two-pointers"
     ],
-    "sheets": [],
+    "sheets": [
+      "neetcode-150"
+    ],
     "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/"
@@ -553,6 +566,7 @@ export const problems = [
     ],
     "sheets": [
       "blind75",
+      "neetcode-150",
       "striver-sde",
       "love-babbar"
     ],
@@ -570,6 +584,7 @@ export const problems = [
     ],
     "sheets": [
       "blind75",
+      "neetcode-150",
       "striver-sde"
     ],
     "source": "leetcode",
@@ -615,6 +630,7 @@ export const problems = [
       "monotonic-stack"
     ],
     "sheets": [
+      "neetcode-150",
       "striver-sde",
       "love-babbar"
     ],
@@ -632,6 +648,7 @@ export const problems = [
     ],
     "sheets": [
       "blind75",
+      "neetcode-150",
       "striver-sde",
       "love-babbar"
     ],
@@ -662,6 +679,7 @@ export const problems = [
     ],
     "sheets": [
       "blind75",
+      "neetcode-150",
       "striver-sde",
       "love-babbar"
     ],
@@ -678,7 +696,8 @@ export const problems = [
       "counting"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "neetcode-150"
     ],
     "source": "leetcode",
     "premium": false,
@@ -692,7 +711,9 @@ export const problems = [
     "patterns": [
       "counting"
     ],
-    "sheets": [],
+    "sheets": [
+      "neetcode-150"
+    ],
     "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/permutation-in-string/"
@@ -732,7 +753,8 @@ export const problems = [
       "hash-map"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "neetcode-150"
     ],
     "source": "leetcode",
     "premium": false,
@@ -747,6 +769,7 @@ export const problems = [
       "monotonic-deque"
     ],
     "sheets": [
+      "neetcode-150",
       "striver-sde",
       "love-babbar"
     ],
@@ -777,6 +800,7 @@ export const problems = [
     ],
     "sheets": [
       "blind75",
+      "neetcode-150",
       "striver-sde",
       "love-babbar"
     ],
@@ -806,7 +830,9 @@ export const problems = [
     "patterns": [
       "design"
     ],
-    "sheets": [],
+    "sheets": [
+      "neetcode-150"
+    ],
     "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/min-stack/"
@@ -819,7 +845,9 @@ export const problems = [
     "patterns": [
       "stack"
     ],
-    "sheets": [],
+    "sheets": [
+      "neetcode-150"
+    ],
     "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/evaluate-reverse-polish-notation/"
@@ -832,7 +860,9 @@ export const problems = [
     "patterns": [
       "backtracking"
     ],
-    "sheets": [],
+    "sheets": [
+      "neetcode-150"
+    ],
     "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/generate-parentheses/"
@@ -845,7 +875,9 @@ export const problems = [
     "patterns": [
       "monotonic-stack"
     ],
-    "sheets": [],
+    "sheets": [
+      "neetcode-150"
+    ],
     "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/daily-temperatures/"
@@ -859,7 +891,9 @@ export const problems = [
       "monotonic-stack",
       "sorting"
     ],
-    "sheets": [],
+    "sheets": [
+      "neetcode-150"
+    ],
     "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/car-fleet/"
@@ -938,7 +972,9 @@ export const problems = [
     "patterns": [
       "monotonic-stack"
     ],
-    "sheets": [],
+    "sheets": [
+      "neetcode-150"
+    ],
     "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/largest-rectangle-in-histogram/"
@@ -951,7 +987,9 @@ export const problems = [
     "patterns": [
       "binary-search"
     ],
-    "sheets": [],
+    "sheets": [
+      "neetcode-150"
+    ],
     "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/binary-search/"
@@ -1007,7 +1045,9 @@ export const problems = [
       "binary-search",
       "matrix"
     ],
-    "sheets": [],
+    "sheets": [
+      "neetcode-150"
+    ],
     "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/search-a-2d-matrix/"
@@ -1020,7 +1060,9 @@ export const problems = [
     "patterns": [
       "search-the-answer"
     ],
-    "sheets": [],
+    "sheets": [
+      "neetcode-150"
+    ],
     "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/koko-eating-bananas/"
@@ -1034,7 +1076,8 @@ export const problems = [
       "binary-search"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "neetcode-150"
     ],
     "source": "leetcode",
     "premium": false,
@@ -1049,7 +1092,8 @@ export const problems = [
       "binary-search"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "neetcode-150"
     ],
     "source": "leetcode",
     "premium": false,
@@ -1063,7 +1107,9 @@ export const problems = [
     "patterns": [
       "design"
     ],
-    "sheets": [],
+    "sheets": [
+      "neetcode-150"
+    ],
     "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/time-based-key-value-store/"
@@ -1119,7 +1165,9 @@ export const problems = [
       "binary-search",
       "partition"
     ],
-    "sheets": [],
+    "sheets": [
+      "neetcode-150"
+    ],
     "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/median-of-two-sorted-arrays/"
@@ -1228,6 +1276,7 @@ export const problems = [
     ],
     "sheets": [
       "blind75",
+      "neetcode-150",
       "striver-sde",
       "love-babbar"
     ],
@@ -1245,6 +1294,7 @@ export const problems = [
     ],
     "sheets": [
       "blind75",
+      "neetcode-150",
       "striver-sde",
       "love-babbar"
     ],
@@ -1262,6 +1312,7 @@ export const problems = [
     ],
     "sheets": [
       "blind75",
+      "neetcode-150",
       "striver-sde",
       "love-babbar"
     ],
@@ -1310,6 +1361,7 @@ export const problems = [
     ],
     "sheets": [
       "blind75",
+      "neetcode-150",
       "striver-sde"
     ],
     "source": "leetcode",
@@ -1326,6 +1378,7 @@ export const problems = [
     ],
     "sheets": [
       "blind75",
+      "neetcode-150",
       "striver-sde",
       "love-babbar"
     ],
@@ -1342,6 +1395,7 @@ export const problems = [
       "hash-map"
     ],
     "sheets": [
+      "neetcode-150",
       "striver-sde",
       "love-babbar"
     ],
@@ -1358,6 +1412,7 @@ export const problems = [
       "carry"
     ],
     "sheets": [
+      "neetcode-150",
       "striver-sde",
       "love-babbar"
     ],
@@ -1374,6 +1429,7 @@ export const problems = [
       "fast-slow"
     ],
     "sheets": [
+      "neetcode-150",
       "striver-sde",
       "love-babbar"
     ],
@@ -1390,7 +1446,9 @@ export const problems = [
       "design",
       "hash-map"
     ],
-    "sheets": [],
+    "sheets": [
+      "neetcode-150"
+    ],
     "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/lru-cache/"
@@ -1460,6 +1518,7 @@ export const problems = [
     ],
     "sheets": [
       "blind75",
+      "neetcode-150",
       "striver-sde",
       "love-babbar"
     ],
@@ -1474,6 +1533,7 @@ export const problems = [
     "topic": "linked-list",
     "patterns": [],
     "sheets": [
+      "neetcode-150",
       "striver-sde"
     ],
     "source": "leetcode",
@@ -1490,6 +1550,7 @@ export const problems = [
     ],
     "sheets": [
       "blind75",
+      "neetcode-150",
       "striver-sde",
       "love-babbar"
     ],
@@ -1507,6 +1568,7 @@ export const problems = [
     ],
     "sheets": [
       "blind75",
+      "neetcode-150",
       "striver-sde",
       "love-babbar"
     ],
@@ -1523,6 +1585,7 @@ export const problems = [
       "dfs"
     ],
     "sheets": [
+      "neetcode-150",
       "striver-sde",
       "love-babbar"
     ],
@@ -1539,6 +1602,7 @@ export const problems = [
       "dfs"
     ],
     "sheets": [
+      "neetcode-150",
       "striver-sde",
       "love-babbar"
     ],
@@ -1556,6 +1620,7 @@ export const problems = [
     ],
     "sheets": [
       "blind75",
+      "neetcode-150",
       "striver-sde"
     ],
     "source": "leetcode",
@@ -1571,7 +1636,8 @@ export const problems = [
       "dfs"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "neetcode-150"
     ],
     "source": "leetcode",
     "premium": false,
@@ -1656,6 +1722,7 @@ export const problems = [
     ],
     "sheets": [
       "blind75",
+      "neetcode-150",
       "striver-sde",
       "love-babbar"
     ],
@@ -1673,6 +1740,7 @@ export const problems = [
     ],
     "sheets": [
       "blind75",
+      "neetcode-150",
       "striver-sde",
       "love-babbar"
     ],
@@ -1689,6 +1757,7 @@ export const problems = [
       "bfs"
     ],
     "sheets": [
+      "neetcode-150",
       "striver-sde",
       "love-babbar"
     ],
@@ -1704,7 +1773,9 @@ export const problems = [
     "patterns": [
       "dfs"
     ],
-    "sheets": [],
+    "sheets": [
+      "neetcode-150"
+    ],
     "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/count-good-nodes-in-binary-tree/"
@@ -1720,6 +1791,7 @@ export const problems = [
     ],
     "sheets": [
       "blind75",
+      "neetcode-150",
       "striver-sde",
       "love-babbar"
     ],
@@ -1738,6 +1810,7 @@ export const problems = [
     ],
     "sheets": [
       "blind75",
+      "neetcode-150",
       "striver-sde",
       "love-babbar"
     ],
@@ -1755,6 +1828,7 @@ export const problems = [
     ],
     "sheets": [
       "blind75",
+      "neetcode-150",
       "striver-sde",
       "love-babbar"
     ],
@@ -1827,6 +1901,7 @@ export const problems = [
     ],
     "sheets": [
       "blind75",
+      "neetcode-150",
       "striver-sde",
       "love-babbar"
     ],
@@ -1845,6 +1920,7 @@ export const problems = [
     ],
     "sheets": [
       "blind75",
+      "neetcode-150",
       "striver-sde",
       "love-babbar"
     ],
@@ -1889,6 +1965,7 @@ export const problems = [
     ],
     "sheets": [
       "blind75",
+      "neetcode-150",
       "striver-sde",
       "love-babbar"
     ],
@@ -1906,7 +1983,8 @@ export const problems = [
       "dfs"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "neetcode-150"
     ],
     "source": "leetcode",
     "premium": false,
@@ -1948,7 +2026,8 @@ export const problems = [
       "backtracking"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "neetcode-150"
     ],
     "source": "leetcode",
     "premium": false,
@@ -1963,7 +2042,9 @@ export const problems = [
       "min-heap",
       "design"
     ],
-    "sheets": [],
+    "sheets": [
+      "neetcode-150"
+    ],
     "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/kth-largest-element-in-a-stream/"
@@ -1976,7 +2057,9 @@ export const problems = [
     "patterns": [
       "max-heap"
     ],
-    "sheets": [],
+    "sheets": [
+      "neetcode-150"
+    ],
     "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/last-stone-weight/"
@@ -1989,7 +2072,9 @@ export const problems = [
     "patterns": [
       "heap"
     ],
-    "sheets": [],
+    "sheets": [
+      "neetcode-150"
+    ],
     "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/k-closest-points-to-origin/"
@@ -2004,6 +2089,7 @@ export const problems = [
       "heap"
     ],
     "sheets": [
+      "neetcode-150",
       "striver-sde",
       "love-babbar"
     ],
@@ -2020,7 +2106,9 @@ export const problems = [
       "greedy",
       "heap"
     ],
-    "sheets": [],
+    "sheets": [
+      "neetcode-150"
+    ],
     "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/task-scheduler/"
@@ -2034,7 +2122,9 @@ export const problems = [
       "design",
       "heap"
     ],
-    "sheets": [],
+    "sheets": [
+      "neetcode-150"
+    ],
     "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/design-twitter/"
@@ -2076,6 +2166,7 @@ export const problems = [
     ],
     "sheets": [
       "blind75",
+      "neetcode-150",
       "striver-sde",
       "love-babbar"
     ],
@@ -2092,6 +2183,7 @@ export const problems = [
       "backtracking"
     ],
     "sheets": [
+      "neetcode-150",
       "striver-sde",
       "love-babbar"
     ],
@@ -2109,6 +2201,7 @@ export const problems = [
     ],
     "sheets": [
       "blind75",
+      "neetcode-150",
       "striver-sde",
       "love-babbar"
     ],
@@ -2125,6 +2218,7 @@ export const problems = [
       "backtracking"
     ],
     "sheets": [
+      "neetcode-150",
       "striver-sde",
       "love-babbar"
     ],
@@ -2141,7 +2235,9 @@ export const problems = [
       "backtracking",
       "dedupe"
     ],
-    "sheets": [],
+    "sheets": [
+      "neetcode-150"
+    ],
     "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/subsets-ii/"
@@ -2155,7 +2251,9 @@ export const problems = [
       "backtracking",
       "dedupe"
     ],
-    "sheets": [],
+    "sheets": [
+      "neetcode-150"
+    ],
     "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/combination-sum-ii/"
@@ -2171,6 +2269,7 @@ export const problems = [
     ],
     "sheets": [
       "blind75",
+      "neetcode-150",
       "striver-sde",
       "love-babbar"
     ],
@@ -2187,6 +2286,7 @@ export const problems = [
       "backtracking"
     ],
     "sheets": [
+      "neetcode-150",
       "striver-sde",
       "love-babbar"
     ],
@@ -2202,7 +2302,9 @@ export const problems = [
     "patterns": [
       "backtracking"
     ],
-    "sheets": [],
+    "sheets": [
+      "neetcode-150"
+    ],
     "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/letter-combinations-of-a-phone-number/"
@@ -2257,6 +2359,7 @@ export const problems = [
       "pruning"
     ],
     "sheets": [
+      "neetcode-150",
       "striver-sde",
       "love-babbar"
     ],
@@ -2309,6 +2412,7 @@ export const problems = [
     ],
     "sheets": [
       "blind75",
+      "neetcode-150",
       "striver-sde",
       "love-babbar"
     ],
@@ -2325,7 +2429,9 @@ export const problems = [
       "dfs",
       "grid"
     ],
-    "sheets": [],
+    "sheets": [
+      "neetcode-150"
+    ],
     "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/max-area-of-island/"
@@ -2341,6 +2447,7 @@ export const problems = [
     ],
     "sheets": [
       "blind75",
+      "neetcode-150",
       "striver-sde",
       "love-babbar"
     ],
@@ -2356,7 +2463,9 @@ export const problems = [
     "patterns": [
       "multi-source-bfs"
     ],
-    "sheets": [],
+    "sheets": [
+      "neetcode-150"
+    ],
     "source": "leetcode",
     "premium": true,
     "url": "https://leetcode.com/problems/walls-and-gates/"
@@ -2369,7 +2478,9 @@ export const problems = [
     "patterns": [
       "multi-source-bfs"
     ],
-    "sheets": [],
+    "sheets": [
+      "neetcode-150"
+    ],
     "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/rotting-oranges/"
@@ -2385,6 +2496,7 @@ export const problems = [
     ],
     "sheets": [
       "blind75",
+      "neetcode-150",
       "striver-sde"
     ],
     "source": "leetcode",
@@ -2400,7 +2512,9 @@ export const problems = [
       "dfs",
       "grid"
     ],
-    "sheets": [],
+    "sheets": [
+      "neetcode-150"
+    ],
     "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/surrounded-regions/"
@@ -2416,6 +2530,7 @@ export const problems = [
     ],
     "sheets": [
       "blind75",
+      "neetcode-150",
       "striver-sde",
       "love-babbar"
     ],
@@ -2431,7 +2546,9 @@ export const problems = [
     "patterns": [
       "topological-sort"
     ],
-    "sheets": [],
+    "sheets": [
+      "neetcode-150"
+    ],
     "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/course-schedule-ii/"
@@ -2446,7 +2563,8 @@ export const problems = [
       "dfs"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "neetcode-150"
     ],
     "source": "leetcode",
     "premium": true,
@@ -2462,6 +2580,7 @@ export const problems = [
     ],
     "sheets": [
       "blind75",
+      "neetcode-150",
       "striver-sde"
     ],
     "source": "leetcode",
@@ -2476,7 +2595,9 @@ export const problems = [
     "patterns": [
       "union-find"
     ],
-    "sheets": [],
+    "sheets": [
+      "neetcode-150"
+    ],
     "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/redundant-connection/"
@@ -2569,7 +2690,9 @@ export const problems = [
     "patterns": [
       "bfs"
     ],
-    "sheets": [],
+    "sheets": [
+      "neetcode-150"
+    ],
     "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/word-ladder/"
@@ -2582,7 +2705,9 @@ export const problems = [
     "patterns": [
       "dijkstra"
     ],
-    "sheets": [],
+    "sheets": [
+      "neetcode-150"
+    ],
     "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/network-delay-time/"
@@ -2596,7 +2721,9 @@ export const problems = [
       "mst",
       "prim"
     ],
-    "sheets": [],
+    "sheets": [
+      "neetcode-150"
+    ],
     "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/min-cost-to-connect-all-points/"
@@ -2609,7 +2736,9 @@ export const problems = [
     "patterns": [
       "bellman-ford"
     ],
-    "sheets": [],
+    "sheets": [
+      "neetcode-150"
+    ],
     "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/cheapest-flights-within-k-stops/"
@@ -2677,7 +2806,9 @@ export const problems = [
       "eulerian-path",
       "dfs"
     ],
-    "sheets": [],
+    "sheets": [
+      "neetcode-150"
+    ],
     "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/reconstruct-itinerary/"
@@ -2691,7 +2822,9 @@ export const problems = [
       "dijkstra",
       "binary-search"
     ],
-    "sheets": [],
+    "sheets": [
+      "neetcode-150"
+    ],
     "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/swim-in-rising-water/"
@@ -2706,6 +2839,7 @@ export const problems = [
     ],
     "sheets": [
       "blind75",
+      "neetcode-150",
       "striver-sde",
       "love-babbar"
     ],
@@ -2723,6 +2857,7 @@ export const problems = [
     ],
     "sheets": [
       "blind75",
+      "neetcode-150",
       "striver-sde",
       "love-babbar"
     ],
@@ -2738,7 +2873,9 @@ export const problems = [
     "patterns": [
       "bottom-up"
     ],
-    "sheets": [],
+    "sheets": [
+      "neetcode-150"
+    ],
     "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/min-cost-climbing-stairs/"
@@ -2753,6 +2890,7 @@ export const problems = [
     ],
     "sheets": [
       "blind75",
+      "neetcode-150",
       "striver-sde",
       "love-babbar"
     ],
@@ -2770,6 +2908,7 @@ export const problems = [
     ],
     "sheets": [
       "blind75",
+      "neetcode-150",
       "striver-sde",
       "love-babbar"
     ],
@@ -2787,6 +2926,7 @@ export const problems = [
     ],
     "sheets": [
       "blind75",
+      "neetcode-150",
       "striver-sde",
       "love-babbar"
     ],
@@ -2803,7 +2943,8 @@ export const problems = [
       "expand-around-centre"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "neetcode-150"
     ],
     "source": "leetcode",
     "premium": false,
@@ -2818,7 +2959,8 @@ export const problems = [
       "bottom-up"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "neetcode-150"
     ],
     "source": "leetcode",
     "premium": false,
@@ -2834,6 +2976,7 @@ export const problems = [
     ],
     "sheets": [
       "blind75",
+      "neetcode-150",
       "striver-sde",
       "love-babbar"
     ],
@@ -2851,6 +2994,7 @@ export const problems = [
     ],
     "sheets": [
       "blind75",
+      "neetcode-150",
       "striver-sde",
       "love-babbar"
     ],
@@ -2868,6 +3012,7 @@ export const problems = [
     ],
     "sheets": [
       "blind75",
+      "neetcode-150",
       "striver-sde",
       "love-babbar"
     ],
@@ -2886,6 +3031,7 @@ export const problems = [
     ],
     "sheets": [
       "blind75",
+      "neetcode-150",
       "striver-sde",
       "love-babbar"
     ],
@@ -2901,7 +3047,9 @@ export const problems = [
     "patterns": [
       "0-1-knapsack"
     ],
-    "sheets": [],
+    "sheets": [
+      "neetcode-150"
+    ],
     "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/partition-equal-subset-sum/"
@@ -2931,6 +3079,7 @@ export const problems = [
     ],
     "sheets": [
       "blind75",
+      "neetcode-150",
       "striver-sde",
       "love-babbar"
     ],
@@ -2947,6 +3096,7 @@ export const problems = [
       "lcs"
     ],
     "sheets": [
+      "neetcode-150",
       "striver-sde",
       "love-babbar"
     ],
@@ -2962,7 +3112,9 @@ export const problems = [
     "patterns": [
       "unbounded-knapsack"
     ],
-    "sheets": [],
+    "sheets": [
+      "neetcode-150"
+    ],
     "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/coin-change-ii/"
@@ -2975,7 +3127,9 @@ export const problems = [
     "patterns": [
       "0-1-knapsack"
     ],
-    "sheets": [],
+    "sheets": [
+      "neetcode-150"
+    ],
     "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/target-sum/"
@@ -2988,7 +3142,9 @@ export const problems = [
     "patterns": [
       "grid-dp"
     ],
-    "sheets": [],
+    "sheets": [
+      "neetcode-150"
+    ],
     "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/interleaving-string/"
@@ -3002,6 +3158,7 @@ export const problems = [
       "levenshtein"
     ],
     "sheets": [
+      "neetcode-150",
       "striver-sde",
       "love-babbar"
     ],
@@ -3103,6 +3260,7 @@ export const problems = [
     ],
     "sheets": [
       "blind75",
+      "neetcode-150",
       "striver-sde",
       "love-babbar"
     ],
@@ -3120,6 +3278,7 @@ export const problems = [
     ],
     "sheets": [
       "blind75",
+      "neetcode-150",
       "striver-sde",
       "love-babbar"
     ],
@@ -3137,6 +3296,7 @@ export const problems = [
       "bfs"
     ],
     "sheets": [
+      "neetcode-150",
       "striver-sde"
     ],
     "source": "leetcode",
@@ -3151,7 +3311,9 @@ export const problems = [
     "patterns": [
       "greedy"
     ],
-    "sheets": [],
+    "sheets": [
+      "neetcode-150"
+    ],
     "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/gas-station/"
@@ -3165,7 +3327,9 @@ export const problems = [
       "greedy",
       "counting"
     ],
-    "sheets": [],
+    "sheets": [
+      "neetcode-150"
+    ],
     "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/hand-of-straights/"
@@ -3178,7 +3342,9 @@ export const problems = [
     "patterns": [
       "greedy"
     ],
-    "sheets": [],
+    "sheets": [
+      "neetcode-150"
+    ],
     "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/merge-triplets-to-form-target-triplet/"
@@ -3192,7 +3358,9 @@ export const problems = [
       "greedy",
       "intervals"
     ],
-    "sheets": [],
+    "sheets": [
+      "neetcode-150"
+    ],
     "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/partition-labels/"
@@ -3205,7 +3373,9 @@ export const problems = [
     "patterns": [
       "greedy"
     ],
-    "sheets": [],
+    "sheets": [
+      "neetcode-150"
+    ],
     "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/valid-parenthesis-string/"
@@ -3316,7 +3486,8 @@ export const problems = [
       "sorting"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "neetcode-150"
     ],
     "source": "leetcode",
     "premium": true,
@@ -3332,6 +3503,7 @@ export const problems = [
     ],
     "sheets": [
       "blind75",
+      "neetcode-150",
       "striver-sde"
     ],
     "source": "leetcode",
@@ -3349,6 +3521,7 @@ export const problems = [
     ],
     "sheets": [
       "blind75",
+      "neetcode-150",
       "striver-sde",
       "love-babbar"
     ],
@@ -3367,6 +3540,7 @@ export const problems = [
     ],
     "sheets": [
       "blind75",
+      "neetcode-150",
       "striver-sde"
     ],
     "source": "leetcode",
@@ -3383,11 +3557,28 @@ export const problems = [
       "sweep"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "neetcode-150"
     ],
     "source": "leetcode",
     "premium": true,
     "url": "https://leetcode.com/problems/meeting-rooms-ii/"
+  },
+  {
+    "id": "minimum-interval-to-include-each-query",
+    "title": "Minimum Interval to Include Each Query",
+    "difficulty": "Hard",
+    "topic": "intervals",
+    "patterns": [
+      "heap",
+      "sorting"
+    ],
+    "sheets": [
+      "neetcode-150"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/minimum-interval-to-include-each-query/"
   },
   {
     "id": "single-number",
@@ -3398,6 +3589,7 @@ export const problems = [
       "xor"
     ],
     "sheets": [
+      "neetcode-150",
       "striver-sde",
       "love-babbar"
     ],
@@ -3414,7 +3606,8 @@ export const problems = [
       "bit-tricks"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "neetcode-150"
     ],
     "source": "leetcode",
     "premium": false,
@@ -3430,7 +3623,8 @@ export const problems = [
       "bit-tricks"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "neetcode-150"
     ],
     "source": "leetcode",
     "premium": false,
@@ -3445,7 +3639,8 @@ export const problems = [
       "bit-tricks"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "neetcode-150"
     ],
     "source": "leetcode",
     "premium": false,
@@ -3461,7 +3656,8 @@ export const problems = [
       "math"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "neetcode-150"
     ],
     "source": "leetcode",
     "premium": false,
@@ -3477,7 +3673,8 @@ export const problems = [
       "carry"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "neetcode-150"
     ],
     "source": "leetcode",
     "premium": false,
@@ -3492,6 +3689,7 @@ export const problems = [
       "overflow"
     ],
     "sheets": [
+      "neetcode-150",
       "love-babbar"
     ],
     "source": "leetcode",
@@ -3545,7 +3743,9 @@ export const problems = [
     "patterns": [
       "math"
     ],
-    "sheets": [],
+    "sheets": [
+      "neetcode-150"
+    ],
     "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/plus-one/"
@@ -3559,7 +3759,9 @@ export const problems = [
       "fast-slow",
       "math"
     ],
-    "sheets": [],
+    "sheets": [
+      "neetcode-150"
+    ],
     "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/happy-number/"
@@ -3587,6 +3789,7 @@ export const problems = [
     ],
     "sheets": [
       "blind75",
+      "neetcode-150",
       "striver-sde",
       "love-babbar"
     ],
@@ -3604,6 +3807,7 @@ export const problems = [
     ],
     "sheets": [
       "blind75",
+      "neetcode-150",
       "striver-sde",
       "love-babbar"
     ],
@@ -3621,6 +3825,7 @@ export const problems = [
     ],
     "sheets": [
       "blind75",
+      "neetcode-150",
       "striver-sde",
       "love-babbar"
     ],
@@ -3637,6 +3842,7 @@ export const problems = [
       "fast-exponentiation"
     ],
     "sheets": [
+      "neetcode-150",
       "striver-sde"
     ],
     "source": "leetcode",
@@ -3651,7 +3857,9 @@ export const problems = [
     "patterns": [
       "math"
     ],
-    "sheets": [],
+    "sheets": [
+      "neetcode-150"
+    ],
     "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/multiply-strings/"
@@ -3665,7 +3873,9 @@ export const problems = [
       "design",
       "hash-map"
     ],
-    "sheets": [],
+    "sheets": [
+      "neetcode-150"
+    ],
     "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/detect-squares/"
@@ -3704,7 +3914,9 @@ export const problems = [
     "patterns": [
       "state-machine"
     ],
-    "sheets": [],
+    "sheets": [
+      "neetcode-150"
+    ],
     "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/"
@@ -3745,6 +3957,7 @@ export const problems = [
       "grid-dp"
     ],
     "sheets": [
+      "neetcode-150",
       "striver-sde"
     ],
     "source": "leetcode",
@@ -3759,7 +3972,9 @@ export const problems = [
     "patterns": [
       "memoised-dfs"
     ],
-    "sheets": [],
+    "sheets": [
+      "neetcode-150"
+    ],
     "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/longest-increasing-path-in-a-matrix/"
@@ -3772,7 +3987,9 @@ export const problems = [
     "patterns": [
       "interval-dp"
     ],
-    "sheets": [],
+    "sheets": [
+      "neetcode-150"
+    ],
     "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/burst-balloons/"
@@ -3785,7 +4002,9 @@ export const problems = [
     "patterns": [
       "grid-dp"
     ],
-    "sheets": [],
+    "sheets": [
+      "neetcode-150"
+    ],
     "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/regular-expression-matching/"
