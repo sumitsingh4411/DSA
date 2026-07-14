@@ -52,16 +52,41 @@ export function validateData(topics, problems, { checkSheetCounts = false } = {}
   return { errors };
 }
 
-async function checkLinks(problems) {
+const LEETCODE_INDEX = 'https://leetcode.com/api/problems/all/';
+const LEVEL = { 1: 'Easy', 2: 'Medium', 3: 'Hard' };
+
+// Fetching each problem page directly returns 403 — LeetCode blocks non-browser
+// agents, which makes "did it 200?" useless as a signal. The public problem index
+// is the actual ground truth: it tells us whether a slug exists at all, and what
+// its real title and difficulty are.
+async function checkAgainstLeetCode(problems) {
   const errors = [];
-  // Sequential and deliberate: LeetCode rate-limits, and a false 429 would be
-  // indistinguishable from a genuinely dead link.
+  const res = await fetch(LEETCODE_INDEX);
+  if (!res.ok) {
+    return [`could not reach the LeetCode problem index (HTTP ${res.status}) — cannot verify links`];
+  }
+
+  const body = await res.json();
+  const canonical = new Map(
+    body.stat_status_pairs.map((p) => [
+      p.stat.question__title_slug,
+      { difficulty: LEVEL[p.difficulty.level], premium: p.paid_only },
+    ]),
+  );
+
   for (const p of problems) {
-    try {
-      const res = await fetch(p.url, { method: 'GET', redirect: 'follow' });
-      if (!res.ok) errors.push(`${p.id}: link returned HTTP ${res.status} — ${p.url}`);
-    } catch (err) {
-      errors.push(`${p.id}: link unreachable (${err.message}) — ${p.url}`);
+    const real = canonical.get(p.id);
+    if (!real) {
+      errors.push(`${p.id}: no such problem on LeetCode — ${p.url}`);
+      continue;
+    }
+    if (real.difficulty !== p.difficulty) {
+      errors.push(`${p.id}: difficulty is ${real.difficulty} on LeetCode, we say ${p.difficulty}`);
+    }
+    if (real.premium !== Boolean(p.premium)) {
+      errors.push(
+        `${p.id}: premium flag is wrong (LeetCode says premium=${real.premium}, we say ${Boolean(p.premium)})`,
+      );
     }
   }
   return errors;
@@ -74,7 +99,7 @@ async function main() {
 
   const { errors } = validateData(topics, problems, { checkSheetCounts: true });
   if (process.argv.includes('--check-links')) {
-    errors.push(...(await checkLinks(problems)));
+    errors.push(...(await checkAgainstLeetCode(problems)));
   }
 
   if (errors.length) {
