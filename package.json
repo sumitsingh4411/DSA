@@ -1,0 +1,14 @@
+{
+  "name": "advancedsa",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A DSA roadmap for FAANG interviews — foundations to elite, with tracking built in.",
+  "scripts": {
+    "test": "node --test 'tests/*.test.mjs'",
+    "validate": "node scripts/validate.mjs",
+    "validate:links": "node scripts/validate.mjs --check-links",
+    "build:sheets": "node scripts/build-sheets.mjs",
+    "serve": "python3 -m http.server 8000"
+  }
+}

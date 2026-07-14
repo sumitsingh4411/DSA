@@ -1,0 +1,31 @@
+name: validate
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Tests
+        run: npm test
+
+      - name: Data integrity
+        run: npm run validate
+
+      - name: Every problem is real (checked against LeetCode)
+        run: npm run validate:links
+
+      # The markdown sheets are generated. If they drift from the data, the repo
+      # starts telling two different stories — so fail rather than let that happen.
+      - name: sheets/ is in sync with the data
+        run: |
+          npm run build:sheets
+          git diff --exit-code sheets/ \
+            || { echo "::error::sheets/ is stale — run 'npm run build:sheets' and commit the result"; exit 1; }
