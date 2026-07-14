@@ -154,8 +154,10 @@ export const problems = [
       "hash-set"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "striver-sde"
     ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/contains-duplicate/"
   },
@@ -169,8 +171,10 @@ export const problems = [
       "counting"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "love-babbar"
     ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/valid-anagram/"
   },
@@ -183,10 +187,107 @@ export const problems = [
       "hash-map"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "striver-sde",
+      "love-babbar"
     ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/two-sum/"
+  },
+  {
+    "id": "majority-element",
+    "title": "Majority Element",
+    "difficulty": "Easy",
+    "topic": "arrays-hashing",
+    "patterns": [
+      "boyer-moore"
+    ],
+    "sheets": [
+      "striver-sde",
+      "love-babbar"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/majority-element/"
+  },
+  {
+    "id": "pascals-triangle",
+    "title": "Pascal's Triangle",
+    "difficulty": "Easy",
+    "topic": "arrays-hashing",
+    "patterns": [],
+    "sheets": [
+      "striver-sde"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/pascals-triangle/"
+  },
+  {
+    "id": "merge-sorted-array",
+    "title": "Merge Sorted Array",
+    "difficulty": "Easy",
+    "topic": "arrays-hashing",
+    "patterns": [],
+    "sheets": [
+      "striver-sde"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/merge-sorted-array/"
+  },
+  {
+    "id": "set-mismatch",
+    "title": "Set Mismatch",
+    "difficulty": "Easy",
+    "topic": "arrays-hashing",
+    "patterns": [],
+    "sheets": [
+      "love-babbar"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/set-mismatch/"
+  },
+  {
+    "id": "find-all-numbers-disappeared-in-an-array",
+    "title": "Find All Numbers Disappeared in an Array",
+    "difficulty": "Easy",
+    "topic": "arrays-hashing",
+    "patterns": [],
+    "sheets": [
+      "love-babbar"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/"
+  },
+  {
+    "id": "gfg-chocolate-distribution-problem",
+    "title": "Chocolate Distribution Problem",
+    "difficulty": "Easy",
+    "topic": "arrays-hashing",
+    "patterns": [],
+    "sheets": [
+      "love-babbar"
+    ],
+    "source": "gfg",
+    "premium": false,
+    "url": "https://www.geeksforgeeks.org/problems/chocolate-distribution-problem3825/1"
+  },
+  {
+    "id": "gfg-common-elements",
+    "title": "Common Elements in 3 Sorted Arrays",
+    "difficulty": "Easy",
+    "topic": "arrays-hashing",
+    "patterns": [],
+    "sheets": [
+      "love-babbar"
+    ],
+    "source": "gfg",
+    "premium": false,
+    "url": "https://www.geeksforgeeks.org/problems/common-elements1132/1"
   },
   {
     "id": "group-anagrams",
@@ -197,8 +298,11 @@ export const problems = [
       "hash-map"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "striver-sde",
+      "love-babbar"
     ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/group-anagrams/"
   },
@@ -212,8 +316,11 @@ export const problems = [
       "heap"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "striver-sde",
+      "love-babbar"
     ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/top-k-frequent-elements/"
   },
@@ -228,6 +335,7 @@ export const problems = [
     "sheets": [
       "blind75"
     ],
+    "source": "leetcode",
     "premium": true,
     "url": "https://leetcode.com/problems/encode-and-decode-strings/"
   },
@@ -240,8 +348,11 @@ export const problems = [
       "prefix-suffix"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "striver-sde",
+      "love-babbar"
     ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/product-of-array-except-self/"
   },
@@ -255,6 +366,7 @@ export const problems = [
       "matrix"
     ],
     "sheets": [],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/valid-sudoku/"
   },
@@ -267,10 +379,127 @@ export const problems = [
       "hash-set"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "striver-sde",
+      "love-babbar"
     ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/longest-consecutive-sequence/"
+  },
+  {
+    "id": "sort-colors",
+    "title": "Sort Colors",
+    "difficulty": "Medium",
+    "topic": "arrays-hashing",
+    "patterns": [
+      "dutch-flag"
+    ],
+    "sheets": [
+      "striver-sde",
+      "love-babbar"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/sort-colors/"
+  },
+  {
+    "id": "majority-element-ii",
+    "title": "Majority Element II",
+    "difficulty": "Medium",
+    "topic": "arrays-hashing",
+    "patterns": [],
+    "sheets": [
+      "striver-sde"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/majority-element-ii/"
+  },
+  {
+    "id": "next-permutation",
+    "title": "Next Permutation",
+    "difficulty": "Medium",
+    "topic": "arrays-hashing",
+    "patterns": [
+      "array"
+    ],
+    "sheets": [
+      "striver-sde",
+      "love-babbar"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/next-permutation/"
+  },
+  {
+    "id": "rotate-array",
+    "title": "Rotate Array",
+    "difficulty": "Medium",
+    "topic": "arrays-hashing",
+    "patterns": [
+      "reversal"
+    ],
+    "sheets": [
+      "striver-sde",
+      "love-babbar"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/rotate-array/"
+  },
+  {
+    "id": "gfg-smallest-positive-missing-number",
+    "title": "Smallest Positive Missing Number",
+    "difficulty": "Medium",
+    "topic": "arrays-hashing",
+    "patterns": [],
+    "sheets": [
+      "love-babbar"
+    ],
+    "source": "gfg",
+    "premium": false,
+    "url": "https://www.geeksforgeeks.org/problems/smallest-positive-missing-number-1587115621/1"
+  },
+  {
+    "id": "gfg-minimum-swaps",
+    "title": "Minimum Swaps to Sort",
+    "difficulty": "Medium",
+    "topic": "arrays-hashing",
+    "patterns": [],
+    "sheets": [
+      "love-babbar"
+    ],
+    "source": "gfg",
+    "premium": false,
+    "url": "https://www.geeksforgeeks.org/problems/minimum-swaps/1"
+  },
+  {
+    "id": "gfg-kth-smallest-element",
+    "title": "Kth Smallest Element",
+    "difficulty": "Medium",
+    "topic": "arrays-hashing",
+    "patterns": [],
+    "sheets": [
+      "love-babbar"
+    ],
+    "source": "gfg",
+    "premium": false,
+    "url": "https://www.geeksforgeeks.org/problems/kth-smallest-element5545/1"
+  },
+  {
+    "id": "gfg-inversion-of-array",
+    "title": "Count Inversions",
+    "difficulty": "Medium",
+    "topic": "arrays-hashing",
+    "patterns": [],
+    "sheets": [
+      "striver-sde",
+      "love-babbar"
+    ],
+    "source": "gfg",
+    "premium": false,
+    "url": "https://www.geeksforgeeks.org/problems/inversion-of-array-1587115620/1"
   },
   {
     "id": "valid-palindrome",
@@ -283,8 +512,22 @@ export const problems = [
     "sheets": [
       "blind75"
     ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/valid-palindrome/"
+  },
+  {
+    "id": "remove-duplicates-from-sorted-array",
+    "title": "Remove Duplicates from Sorted Array",
+    "difficulty": "Easy",
+    "topic": "two-pointers",
+    "patterns": [],
+    "sheets": [
+      "striver-sde"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/remove-duplicates-from-sorted-array/"
   },
   {
     "id": "two-sum-ii-input-array-is-sorted",
@@ -295,6 +538,7 @@ export const problems = [
       "two-pointers"
     ],
     "sheets": [],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/"
   },
@@ -308,8 +552,11 @@ export const problems = [
       "sorting"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "striver-sde",
+      "love-babbar"
     ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/3sum/"
   },
@@ -322,10 +569,41 @@ export const problems = [
       "greedy"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "striver-sde"
     ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/container-with-most-water/"
+  },
+  {
+    "id": "4sum",
+    "title": "4Sum",
+    "difficulty": "Medium",
+    "topic": "two-pointers",
+    "patterns": [
+      "two-pointers"
+    ],
+    "sheets": [
+      "striver-sde",
+      "love-babbar"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/4sum/"
+  },
+  {
+    "id": "3sum-closest",
+    "title": "3Sum Closest",
+    "difficulty": "Medium",
+    "topic": "two-pointers",
+    "patterns": [],
+    "sheets": [
+      "striver-sde"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/3sum-closest/"
   },
   {
     "id": "trapping-rain-water",
@@ -336,7 +614,11 @@ export const problems = [
       "two-pointers",
       "monotonic-stack"
     ],
-    "sheets": [],
+    "sheets": [
+      "striver-sde",
+      "love-babbar"
+    ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/trapping-rain-water/"
   },
@@ -349,10 +631,26 @@ export const problems = [
       "greedy"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "striver-sde",
+      "love-babbar"
     ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/"
+  },
+  {
+    "id": "gfg-first-negative-integer-in-every-window-of-size-k",
+    "title": "First Negative Integer in Every Window of Size K",
+    "difficulty": "Easy",
+    "topic": "sliding-window",
+    "patterns": [],
+    "sheets": [
+      "love-babbar"
+    ],
+    "source": "gfg",
+    "premium": false,
+    "url": "https://www.geeksforgeeks.org/problems/first-negative-integer-in-every-window-of-size-k3345/1"
   },
   {
     "id": "longest-substring-without-repeating-characters",
@@ -363,8 +661,11 @@ export const problems = [
       "hash-set"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "striver-sde",
+      "love-babbar"
     ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/longest-substring-without-repeating-characters/"
   },
@@ -379,6 +680,7 @@ export const problems = [
     "sheets": [
       "blind75"
     ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/longest-repeating-character-replacement/"
   },
@@ -391,8 +693,35 @@ export const problems = [
       "counting"
     ],
     "sheets": [],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/permutation-in-string/"
+  },
+  {
+    "id": "fruit-into-baskets",
+    "title": "Fruit Into Baskets",
+    "difficulty": "Medium",
+    "topic": "sliding-window",
+    "patterns": [],
+    "sheets": [
+      "striver-sde"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/fruit-into-baskets/"
+  },
+  {
+    "id": "max-consecutive-ones-iii",
+    "title": "Max Consecutive Ones III",
+    "difficulty": "Medium",
+    "topic": "sliding-window",
+    "patterns": [],
+    "sheets": [
+      "striver-sde"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/max-consecutive-ones-iii/"
   },
   {
     "id": "minimum-window-substring",
@@ -405,6 +734,7 @@ export const problems = [
     "sheets": [
       "blind75"
     ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/minimum-window-substring/"
   },
@@ -416,9 +746,26 @@ export const problems = [
     "patterns": [
       "monotonic-deque"
     ],
-    "sheets": [],
+    "sheets": [
+      "striver-sde",
+      "love-babbar"
+    ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/sliding-window-maximum/"
+  },
+  {
+    "id": "subarrays-with-k-different-integers",
+    "title": "Subarrays with K Different Integers",
+    "difficulty": "Hard",
+    "topic": "sliding-window",
+    "patterns": [],
+    "sheets": [
+      "striver-sde"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/subarrays-with-k-different-integers/"
   },
   {
     "id": "valid-parentheses",
@@ -429,10 +776,27 @@ export const problems = [
       "stack"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "striver-sde",
+      "love-babbar"
     ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/valid-parentheses/"
+  },
+  {
+    "id": "next-greater-element-i",
+    "title": "Next Greater Element I",
+    "difficulty": "Easy",
+    "topic": "stack",
+    "patterns": [],
+    "sheets": [
+      "striver-sde",
+      "love-babbar"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/next-greater-element-i/"
   },
   {
     "id": "min-stack",
@@ -443,6 +807,7 @@ export const problems = [
       "design"
     ],
     "sheets": [],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/min-stack/"
   },
@@ -455,6 +820,7 @@ export const problems = [
       "stack"
     ],
     "sheets": [],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/evaluate-reverse-polish-notation/"
   },
@@ -467,6 +833,7 @@ export const problems = [
       "backtracking"
     ],
     "sheets": [],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/generate-parentheses/"
   },
@@ -479,6 +846,7 @@ export const problems = [
       "monotonic-stack"
     ],
     "sheets": [],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/daily-temperatures/"
   },
@@ -492,8 +860,75 @@ export const problems = [
       "sorting"
     ],
     "sheets": [],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/car-fleet/"
+  },
+  {
+    "id": "next-greater-element-ii",
+    "title": "Next Greater Element II",
+    "difficulty": "Medium",
+    "topic": "stack",
+    "patterns": [],
+    "sheets": [
+      "striver-sde"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/next-greater-element-ii/"
+  },
+  {
+    "id": "online-stock-span",
+    "title": "Online Stock Span",
+    "difficulty": "Medium",
+    "topic": "stack",
+    "patterns": [],
+    "sheets": [
+      "striver-sde"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/online-stock-span/"
+  },
+  {
+    "id": "sum-of-subarray-minimums",
+    "title": "Sum of Subarray Minimums",
+    "difficulty": "Medium",
+    "topic": "stack",
+    "patterns": [],
+    "sheets": [
+      "striver-sde"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/sum-of-subarray-minimums/"
+  },
+  {
+    "id": "asteroid-collision",
+    "title": "Asteroid Collision",
+    "difficulty": "Medium",
+    "topic": "stack",
+    "patterns": [],
+    "sheets": [
+      "striver-sde"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/asteroid-collision/"
+  },
+  {
+    "id": "gfg-the-celebrity-problem",
+    "title": "The Celebrity Problem",
+    "difficulty": "Medium",
+    "topic": "stack",
+    "patterns": [],
+    "sheets": [
+      "striver-sde",
+      "love-babbar"
+    ],
+    "source": "gfg",
+    "premium": false,
+    "url": "https://www.geeksforgeeks.org/problems/the-celebrity-problem/1"
   },
   {
     "id": "largest-rectangle-in-histogram",
@@ -504,6 +939,7 @@ export const problems = [
       "monotonic-stack"
     ],
     "sheets": [],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/largest-rectangle-in-histogram/"
   },
@@ -516,8 +952,51 @@ export const problems = [
       "binary-search"
     ],
     "sheets": [],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/binary-search/"
+  },
+  {
+    "id": "sqrtx",
+    "title": "Sqrt(x)",
+    "difficulty": "Easy",
+    "topic": "binary-search",
+    "patterns": [
+      "binary-search"
+    ],
+    "sheets": [
+      "striver-sde",
+      "love-babbar"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/sqrtx/"
+  },
+  {
+    "id": "search-insert-position",
+    "title": "Search Insert Position",
+    "difficulty": "Easy",
+    "topic": "binary-search",
+    "patterns": [],
+    "sheets": [
+      "striver-sde"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/search-insert-position/"
+  },
+  {
+    "id": "kth-missing-positive-number",
+    "title": "Kth Missing Positive Number",
+    "difficulty": "Easy",
+    "topic": "binary-search",
+    "patterns": [],
+    "sheets": [
+      "striver-sde"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/kth-missing-positive-number/"
   },
   {
     "id": "search-a-2d-matrix",
@@ -529,6 +1008,7 @@ export const problems = [
       "matrix"
     ],
     "sheets": [],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/search-a-2d-matrix/"
   },
@@ -541,6 +1021,7 @@ export const problems = [
       "search-the-answer"
     ],
     "sheets": [],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/koko-eating-bananas/"
   },
@@ -555,6 +1036,7 @@ export const problems = [
     "sheets": [
       "blind75"
     ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/"
   },
@@ -569,6 +1051,7 @@ export const problems = [
     "sheets": [
       "blind75"
     ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/search-in-rotated-sorted-array/"
   },
@@ -581,8 +1064,51 @@ export const problems = [
       "design"
     ],
     "sheets": [],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/time-based-key-value-store/"
+  },
+  {
+    "id": "find-first-and-last-position-of-element-in-sorted-array",
+    "title": "Find First and Last Position of Element in Sorted Array",
+    "difficulty": "Medium",
+    "topic": "binary-search",
+    "patterns": [],
+    "sheets": [
+      "striver-sde",
+      "love-babbar"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/"
+  },
+  {
+    "id": "find-peak-element",
+    "title": "Find Peak Element",
+    "difficulty": "Medium",
+    "topic": "binary-search",
+    "patterns": [
+      "binary-search"
+    ],
+    "sheets": [
+      "striver-sde"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/find-peak-element/"
+  },
+  {
+    "id": "single-element-in-a-sorted-array",
+    "title": "Single Element in a Sorted Array",
+    "difficulty": "Medium",
+    "topic": "binary-search",
+    "patterns": [],
+    "sheets": [
+      "striver-sde"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/single-element-in-a-sorted-array/"
   },
   {
     "id": "median-of-two-sorted-arrays",
@@ -594,8 +1120,22 @@ export const problems = [
       "partition"
     ],
     "sheets": [],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/median-of-two-sorted-arrays/"
+  },
+  {
+    "id": "split-array-largest-sum",
+    "title": "Split Array Largest Sum",
+    "difficulty": "Hard",
+    "topic": "binary-search",
+    "patterns": [],
+    "sheets": [
+      "striver-sde"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/split-array-largest-sum/"
   },
   {
     "id": "range-sum-query-immutable",
@@ -607,6 +1147,7 @@ export const problems = [
       "design"
     ],
     "sheets": [],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/range-sum-query-immutable/"
   },
@@ -619,8 +1160,22 @@ export const problems = [
       "prefix-sum"
     ],
     "sheets": [],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/find-pivot-index/"
+  },
+  {
+    "id": "gfg-subarray-with-0-sum",
+    "title": "Subarray with 0 Sum",
+    "difficulty": "Easy",
+    "topic": "prefix-sum",
+    "patterns": [],
+    "sheets": [
+      "love-babbar"
+    ],
+    "source": "gfg",
+    "premium": false,
+    "url": "https://www.geeksforgeeks.org/problems/subarray-with-0-sum-1587115621/1"
   },
   {
     "id": "subarray-sum-equals-k",
@@ -632,6 +1187,7 @@ export const problems = [
       "hash-map"
     ],
     "sheets": [],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/subarray-sum-equals-k/"
   },
@@ -645,8 +1201,22 @@ export const problems = [
       "hash-map"
     ],
     "sheets": [],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/contiguous-array/"
+  },
+  {
+    "id": "subarray-sums-divisible-by-k",
+    "title": "Subarray Sums Divisible by K",
+    "difficulty": "Medium",
+    "topic": "prefix-sum",
+    "patterns": [],
+    "sheets": [
+      "striver-sde"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/subarray-sums-divisible-by-k/"
   },
   {
     "id": "reverse-linked-list",
@@ -657,8 +1227,11 @@ export const problems = [
       "pointers"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "striver-sde",
+      "love-babbar"
     ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/reverse-linked-list/"
   },
@@ -671,8 +1244,11 @@ export const problems = [
       "dummy-head"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "striver-sde",
+      "love-babbar"
     ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/merge-two-sorted-lists/"
   },
@@ -685,10 +1261,43 @@ export const problems = [
       "fast-slow"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "striver-sde",
+      "love-babbar"
     ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/linked-list-cycle/"
+  },
+  {
+    "id": "palindrome-linked-list",
+    "title": "Palindrome Linked List",
+    "difficulty": "Easy",
+    "topic": "linked-list",
+    "patterns": [
+      "fast-slow"
+    ],
+    "sheets": [
+      "striver-sde",
+      "love-babbar"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/palindrome-linked-list/"
+  },
+  {
+    "id": "intersection-of-two-linked-lists",
+    "title": "Intersection of Two Linked Lists",
+    "difficulty": "Easy",
+    "topic": "linked-list",
+    "patterns": [],
+    "sheets": [
+      "striver-sde",
+      "love-babbar"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/intersection-of-two-linked-lists/"
   },
   {
     "id": "reorder-list",
@@ -700,8 +1309,10 @@ export const problems = [
       "reversal"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "striver-sde"
     ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/reorder-list/"
   },
@@ -714,8 +1325,11 @@ export const problems = [
       "two-pointers"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "striver-sde",
+      "love-babbar"
     ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/remove-nth-node-from-end-of-list/"
   },
@@ -727,7 +1341,11 @@ export const problems = [
     "patterns": [
       "hash-map"
     ],
-    "sheets": [],
+    "sheets": [
+      "striver-sde",
+      "love-babbar"
+    ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/copy-list-with-random-pointer/"
   },
@@ -739,7 +1357,11 @@ export const problems = [
     "patterns": [
       "carry"
     ],
-    "sheets": [],
+    "sheets": [
+      "striver-sde",
+      "love-babbar"
+    ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/add-two-numbers/"
   },
@@ -751,7 +1373,11 @@ export const problems = [
     "patterns": [
       "fast-slow"
     ],
-    "sheets": [],
+    "sheets": [
+      "striver-sde",
+      "love-babbar"
+    ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/find-the-duplicate-number/"
   },
@@ -765,8 +1391,63 @@ export const problems = [
       "hash-map"
     ],
     "sheets": [],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/lru-cache/"
+  },
+  {
+    "id": "rotate-list",
+    "title": "Rotate List",
+    "difficulty": "Medium",
+    "topic": "linked-list",
+    "patterns": [],
+    "sheets": [
+      "striver-sde",
+      "love-babbar"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/rotate-list/"
+  },
+  {
+    "id": "swap-nodes-in-pairs",
+    "title": "Swap Nodes in Pairs",
+    "difficulty": "Medium",
+    "topic": "linked-list",
+    "patterns": [],
+    "sheets": [
+      "striver-sde"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/swap-nodes-in-pairs/"
+  },
+  {
+    "id": "flatten-a-multilevel-doubly-linked-list",
+    "title": "Flatten a Multilevel Doubly Linked List",
+    "difficulty": "Medium",
+    "topic": "linked-list",
+    "patterns": [],
+    "sheets": [
+      "love-babbar"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/"
+  },
+  {
+    "id": "gfg-flattening-a-linked-list",
+    "title": "Flatten a Linked List",
+    "difficulty": "Medium",
+    "topic": "linked-list",
+    "patterns": [],
+    "sheets": [
+      "striver-sde",
+      "love-babbar"
+    ],
+    "source": "gfg",
+    "premium": false,
+    "url": "https://www.geeksforgeeks.org/problems/flattening-a-linked-list/1"
   },
   {
     "id": "merge-k-sorted-lists",
@@ -778,10 +1459,26 @@ export const problems = [
       "divide-and-conquer"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "striver-sde",
+      "love-babbar"
     ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/merge-k-sorted-lists/"
+  },
+  {
+    "id": "reverse-nodes-in-k-group",
+    "title": "Reverse Nodes in k-Group",
+    "difficulty": "Hard",
+    "topic": "linked-list",
+    "patterns": [],
+    "sheets": [
+      "striver-sde"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/reverse-nodes-in-k-group/"
   },
   {
     "id": "invert-binary-tree",
@@ -792,8 +1489,11 @@ export const problems = [
       "dfs"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "striver-sde",
+      "love-babbar"
     ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/invert-binary-tree/"
   },
@@ -806,8 +1506,11 @@ export const problems = [
       "dfs"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "striver-sde",
+      "love-babbar"
     ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/maximum-depth-of-binary-tree/"
   },
@@ -819,7 +1522,11 @@ export const problems = [
     "patterns": [
       "dfs"
     ],
-    "sheets": [],
+    "sheets": [
+      "striver-sde",
+      "love-babbar"
+    ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/diameter-of-binary-tree/"
   },
@@ -831,7 +1538,11 @@ export const problems = [
     "patterns": [
       "dfs"
     ],
-    "sheets": [],
+    "sheets": [
+      "striver-sde",
+      "love-babbar"
+    ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/balanced-binary-tree/"
   },
@@ -844,8 +1555,10 @@ export const problems = [
       "dfs"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "striver-sde"
     ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/same-tree/"
   },
@@ -860,8 +1573,78 @@ export const problems = [
     "sheets": [
       "blind75"
     ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/subtree-of-another-tree/"
+  },
+  {
+    "id": "binary-tree-inorder-traversal",
+    "title": "Binary Tree Inorder Traversal",
+    "difficulty": "Easy",
+    "topic": "trees",
+    "patterns": [],
+    "sheets": [
+      "striver-sde",
+      "love-babbar"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/binary-tree-inorder-traversal/"
+  },
+  {
+    "id": "binary-tree-preorder-traversal",
+    "title": "Binary Tree Preorder Traversal",
+    "difficulty": "Easy",
+    "topic": "trees",
+    "patterns": [],
+    "sheets": [
+      "striver-sde",
+      "love-babbar"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/binary-tree-preorder-traversal/"
+  },
+  {
+    "id": "binary-tree-postorder-traversal",
+    "title": "Binary Tree Postorder Traversal",
+    "difficulty": "Easy",
+    "topic": "trees",
+    "patterns": [],
+    "sheets": [
+      "striver-sde",
+      "love-babbar"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/binary-tree-postorder-traversal/"
+  },
+  {
+    "id": "symmetric-tree",
+    "title": "Symmetric Tree",
+    "difficulty": "Easy",
+    "topic": "trees",
+    "patterns": [],
+    "sheets": [
+      "striver-sde",
+      "love-babbar"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/symmetric-tree/"
+  },
+  {
+    "id": "path-sum",
+    "title": "Path Sum",
+    "difficulty": "Easy",
+    "topic": "trees",
+    "patterns": [],
+    "sheets": [
+      "striver-sde"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/path-sum/"
   },
   {
     "id": "lowest-common-ancestor-of-a-binary-search-tree",
@@ -872,8 +1655,11 @@ export const problems = [
       "bst"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "striver-sde",
+      "love-babbar"
     ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/"
   },
@@ -886,8 +1672,11 @@ export const problems = [
       "bfs"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "striver-sde",
+      "love-babbar"
     ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/binary-tree-level-order-traversal/"
   },
@@ -899,7 +1688,11 @@ export const problems = [
     "patterns": [
       "bfs"
     ],
-    "sheets": [],
+    "sheets": [
+      "striver-sde",
+      "love-babbar"
+    ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/binary-tree-right-side-view/"
   },
@@ -912,6 +1705,7 @@ export const problems = [
       "dfs"
     ],
     "sheets": [],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/count-good-nodes-in-binary-tree/"
   },
@@ -925,8 +1719,11 @@ export const problems = [
       "dfs"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "striver-sde",
+      "love-babbar"
     ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/validate-binary-search-tree/"
   },
@@ -940,8 +1737,11 @@ export const problems = [
       "inorder"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "striver-sde",
+      "love-babbar"
     ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/kth-smallest-element-in-a-bst/"
   },
@@ -954,10 +1754,68 @@ export const problems = [
       "divide-and-conquer"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "striver-sde",
+      "love-babbar"
     ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/"
+  },
+  {
+    "id": "binary-tree-zigzag-level-order-traversal",
+    "title": "Binary Tree Zigzag Level Order Traversal",
+    "difficulty": "Medium",
+    "topic": "trees",
+    "patterns": [],
+    "sheets": [
+      "striver-sde",
+      "love-babbar"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/"
+  },
+  {
+    "id": "flatten-binary-tree-to-linked-list",
+    "title": "Flatten Binary Tree to Linked List",
+    "difficulty": "Medium",
+    "topic": "trees",
+    "patterns": [],
+    "sheets": [
+      "striver-sde",
+      "love-babbar"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/flatten-binary-tree-to-linked-list/"
+  },
+  {
+    "id": "populating-next-right-pointers-in-each-node",
+    "title": "Populating Next Right Pointers in Each Node",
+    "difficulty": "Medium",
+    "topic": "trees",
+    "patterns": [],
+    "sheets": [
+      "striver-sde"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/populating-next-right-pointers-in-each-node/"
+  },
+  {
+    "id": "lowest-common-ancestor-of-a-binary-tree",
+    "title": "Lowest Common Ancestor of a Binary Tree",
+    "difficulty": "Medium",
+    "topic": "trees",
+    "patterns": [],
+    "sheets": [
+      "striver-sde",
+      "love-babbar"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/"
   },
   {
     "id": "binary-tree-maximum-path-sum",
@@ -968,8 +1826,11 @@ export const problems = [
       "dfs"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "striver-sde",
+      "love-babbar"
     ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/binary-tree-maximum-path-sum/"
   },
@@ -983,10 +1844,39 @@ export const problems = [
       "dfs"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "striver-sde",
+      "love-babbar"
     ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/serialize-and-deserialize-binary-tree/"
+  },
+  {
+    "id": "vertical-order-traversal-of-a-binary-tree",
+    "title": "Vertical Order Traversal of a Binary Tree",
+    "difficulty": "Hard",
+    "topic": "trees",
+    "patterns": [],
+    "sheets": [
+      "striver-sde"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/"
+  },
+  {
+    "id": "longest-common-prefix",
+    "title": "Longest Common Prefix",
+    "difficulty": "Easy",
+    "topic": "tries",
+    "patterns": [],
+    "sheets": [
+      "love-babbar"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/longest-common-prefix/"
   },
   {
     "id": "implement-trie-prefix-tree",
@@ -998,8 +1888,11 @@ export const problems = [
       "design"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "striver-sde",
+      "love-babbar"
     ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/implement-trie-prefix-tree/"
   },
@@ -1015,8 +1908,35 @@ export const problems = [
     "sheets": [
       "blind75"
     ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/design-add-and-search-words-data-structure/"
+  },
+  {
+    "id": "maximum-xor-of-two-numbers-in-an-array",
+    "title": "Maximum XOR of Two Numbers in an Array",
+    "difficulty": "Medium",
+    "topic": "tries",
+    "patterns": [],
+    "sheets": [
+      "striver-sde"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/"
+  },
+  {
+    "id": "replace-words",
+    "title": "Replace Words",
+    "difficulty": "Medium",
+    "topic": "tries",
+    "patterns": [],
+    "sheets": [
+      "love-babbar"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/replace-words/"
   },
   {
     "id": "word-search-ii",
@@ -1030,6 +1950,7 @@ export const problems = [
     "sheets": [
       "blind75"
     ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/word-search-ii/"
   },
@@ -1043,6 +1964,7 @@ export const problems = [
       "design"
     ],
     "sheets": [],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/kth-largest-element-in-a-stream/"
   },
@@ -1055,6 +1977,7 @@ export const problems = [
       "max-heap"
     ],
     "sheets": [],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/last-stone-weight/"
   },
@@ -1067,6 +1990,7 @@ export const problems = [
       "heap"
     ],
     "sheets": [],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/k-closest-points-to-origin/"
   },
@@ -1079,7 +2003,11 @@ export const problems = [
       "quickselect",
       "heap"
     ],
-    "sheets": [],
+    "sheets": [
+      "striver-sde",
+      "love-babbar"
+    ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/kth-largest-element-in-an-array/"
   },
@@ -1093,6 +2021,7 @@ export const problems = [
       "heap"
     ],
     "sheets": [],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/task-scheduler/"
   },
@@ -1106,8 +2035,35 @@ export const problems = [
       "heap"
     ],
     "sheets": [],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/design-twitter/"
+  },
+  {
+    "id": "find-k-pairs-with-smallest-sums",
+    "title": "Find K Pairs with Smallest Sums",
+    "difficulty": "Medium",
+    "topic": "heap-priority-queue",
+    "patterns": [],
+    "sheets": [
+      "love-babbar"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/find-k-pairs-with-smallest-sums/"
+  },
+  {
+    "id": "sort-characters-by-frequency",
+    "title": "Sort Characters By Frequency",
+    "difficulty": "Medium",
+    "topic": "heap-priority-queue",
+    "patterns": [],
+    "sheets": [
+      "love-babbar"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/sort-characters-by-frequency/"
   },
   {
     "id": "find-median-from-data-stream",
@@ -1119,8 +2075,11 @@ export const problems = [
       "design"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "striver-sde",
+      "love-babbar"
     ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/find-median-from-data-stream/"
   },
@@ -1132,7 +2091,11 @@ export const problems = [
     "patterns": [
       "backtracking"
     ],
-    "sheets": [],
+    "sheets": [
+      "striver-sde",
+      "love-babbar"
+    ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/subsets/"
   },
@@ -1145,8 +2108,11 @@ export const problems = [
       "backtracking"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "striver-sde",
+      "love-babbar"
     ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/combination-sum/"
   },
@@ -1158,7 +2124,11 @@ export const problems = [
     "patterns": [
       "backtracking"
     ],
-    "sheets": [],
+    "sheets": [
+      "striver-sde",
+      "love-babbar"
+    ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/permutations/"
   },
@@ -1172,6 +2142,7 @@ export const problems = [
       "dedupe"
     ],
     "sheets": [],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/subsets-ii/"
   },
@@ -1185,6 +2156,7 @@ export const problems = [
       "dedupe"
     ],
     "sheets": [],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/combination-sum-ii/"
   },
@@ -1198,8 +2170,11 @@ export const problems = [
       "matrix"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "striver-sde",
+      "love-babbar"
     ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/word-search/"
   },
@@ -1211,7 +2186,11 @@ export const problems = [
     "patterns": [
       "backtracking"
     ],
-    "sheets": [],
+    "sheets": [
+      "striver-sde",
+      "love-babbar"
+    ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/palindrome-partitioning/"
   },
@@ -1224,8 +2203,49 @@ export const problems = [
       "backtracking"
     ],
     "sheets": [],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/letter-combinations-of-a-phone-number/"
+  },
+  {
+    "id": "permutations-ii",
+    "title": "Permutations II",
+    "difficulty": "Medium",
+    "topic": "backtracking",
+    "patterns": [],
+    "sheets": [
+      "striver-sde"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/permutations-ii/"
+  },
+  {
+    "id": "combinations",
+    "title": "Combinations",
+    "difficulty": "Medium",
+    "topic": "backtracking",
+    "patterns": [],
+    "sheets": [
+      "striver-sde"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/combinations/"
+  },
+  {
+    "id": "gfg-rat-in-a-maze-problem",
+    "title": "Rat in a Maze",
+    "difficulty": "Medium",
+    "topic": "backtracking",
+    "patterns": [],
+    "sheets": [
+      "striver-sde",
+      "love-babbar"
+    ],
+    "source": "gfg",
+    "premium": false,
+    "url": "https://www.geeksforgeeks.org/problems/rat-in-a-maze-problem/1"
   },
   {
     "id": "n-queens",
@@ -1236,9 +2256,46 @@ export const problems = [
       "backtracking",
       "pruning"
     ],
-    "sheets": [],
+    "sheets": [
+      "striver-sde",
+      "love-babbar"
+    ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/n-queens/"
+  },
+  {
+    "id": "sudoku-solver",
+    "title": "Sudoku Solver",
+    "difficulty": "Hard",
+    "topic": "backtracking",
+    "patterns": [
+      "backtracking"
+    ],
+    "sheets": [
+      "striver-sde",
+      "love-babbar"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/sudoku-solver/"
+  },
+  {
+    "id": "flood-fill",
+    "title": "Flood Fill",
+    "difficulty": "Easy",
+    "topic": "graphs",
+    "patterns": [
+      "dfs",
+      "grid"
+    ],
+    "sheets": [
+      "striver-sde",
+      "love-babbar"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/flood-fill/"
   },
   {
     "id": "number-of-islands",
@@ -1251,8 +2308,11 @@ export const problems = [
       "grid"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "striver-sde",
+      "love-babbar"
     ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/number-of-islands/"
   },
@@ -1266,6 +2326,7 @@ export const problems = [
       "grid"
     ],
     "sheets": [],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/max-area-of-island/"
   },
@@ -1279,8 +2340,11 @@ export const problems = [
       "hash-map"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "striver-sde",
+      "love-babbar"
     ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/clone-graph/"
   },
@@ -1293,6 +2357,7 @@ export const problems = [
       "multi-source-bfs"
     ],
     "sheets": [],
+    "source": "leetcode",
     "premium": true,
     "url": "https://leetcode.com/problems/walls-and-gates/"
   },
@@ -1305,6 +2370,7 @@ export const problems = [
       "multi-source-bfs"
     ],
     "sheets": [],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/rotting-oranges/"
   },
@@ -1318,8 +2384,10 @@ export const problems = [
       "grid"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "striver-sde"
     ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/pacific-atlantic-water-flow/"
   },
@@ -1333,6 +2401,7 @@ export const problems = [
       "grid"
     ],
     "sheets": [],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/surrounded-regions/"
   },
@@ -1346,8 +2415,11 @@ export const problems = [
       "cycle-detection"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "striver-sde",
+      "love-babbar"
     ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/course-schedule/"
   },
@@ -1360,6 +2432,7 @@ export const problems = [
       "topological-sort"
     ],
     "sheets": [],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/course-schedule-ii/"
   },
@@ -1375,6 +2448,7 @@ export const problems = [
     "sheets": [
       "blind75"
     ],
+    "source": "leetcode",
     "premium": true,
     "url": "https://leetcode.com/problems/graph-valid-tree/"
   },
@@ -1387,8 +2461,10 @@ export const problems = [
       "union-find"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "striver-sde"
     ],
+    "source": "leetcode",
     "premium": true,
     "url": "https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/"
   },
@@ -1401,8 +2477,89 @@ export const problems = [
       "union-find"
     ],
     "sheets": [],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/redundant-connection/"
+  },
+  {
+    "id": "01-matrix",
+    "title": "01 Matrix",
+    "difficulty": "Medium",
+    "topic": "graphs",
+    "patterns": [],
+    "sheets": [
+      "striver-sde"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/01-matrix/"
+  },
+  {
+    "id": "is-graph-bipartite",
+    "title": "Is Graph Bipartite?",
+    "difficulty": "Medium",
+    "topic": "graphs",
+    "patterns": [],
+    "sheets": [
+      "striver-sde",
+      "love-babbar"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/is-graph-bipartite/"
+  },
+  {
+    "id": "find-eventual-safe-states",
+    "title": "Find Eventual Safe States",
+    "difficulty": "Medium",
+    "topic": "graphs",
+    "patterns": [],
+    "sheets": [
+      "striver-sde"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/find-eventual-safe-states/"
+  },
+  {
+    "id": "course-schedule-iv",
+    "title": "Course Schedule IV",
+    "difficulty": "Medium",
+    "topic": "graphs",
+    "patterns": [],
+    "sheets": [
+      "striver-sde"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/course-schedule-iv/"
+  },
+  {
+    "id": "number-of-provinces",
+    "title": "Number of Provinces",
+    "difficulty": "Medium",
+    "topic": "graphs",
+    "patterns": [],
+    "sheets": [
+      "striver-sde",
+      "love-babbar"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/number-of-provinces/"
+  },
+  {
+    "id": "gfg-topological-sort",
+    "title": "Topological Sort",
+    "difficulty": "Medium",
+    "topic": "graphs",
+    "patterns": [],
+    "sheets": [
+      "love-babbar"
+    ],
+    "source": "gfg",
+    "premium": false,
+    "url": "https://www.geeksforgeeks.org/problems/topological-sort/1"
   },
   {
     "id": "word-ladder",
@@ -1413,6 +2570,7 @@ export const problems = [
       "bfs"
     ],
     "sheets": [],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/word-ladder/"
   },
@@ -1425,6 +2583,7 @@ export const problems = [
       "dijkstra"
     ],
     "sheets": [],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/network-delay-time/"
   },
@@ -1438,6 +2597,7 @@ export const problems = [
       "prim"
     ],
     "sheets": [],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/min-cost-to-connect-all-points/"
   },
@@ -1450,8 +2610,63 @@ export const problems = [
       "bellman-ford"
     ],
     "sheets": [],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/cheapest-flights-within-k-stops/"
+  },
+  {
+    "id": "shortest-path-in-binary-matrix",
+    "title": "Shortest Path in Binary Matrix",
+    "difficulty": "Medium",
+    "topic": "advanced-graphs",
+    "patterns": [],
+    "sheets": [
+      "striver-sde"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/shortest-path-in-binary-matrix/"
+  },
+  {
+    "id": "path-with-minimum-effort",
+    "title": "Path With Minimum Effort",
+    "difficulty": "Medium",
+    "topic": "advanced-graphs",
+    "patterns": [],
+    "sheets": [
+      "striver-sde"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/path-with-minimum-effort/"
+  },
+  {
+    "id": "accounts-merge",
+    "title": "Accounts Merge",
+    "difficulty": "Medium",
+    "topic": "advanced-graphs",
+    "patterns": [
+      "union-find"
+    ],
+    "sheets": [
+      "striver-sde"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/accounts-merge/"
+  },
+  {
+    "id": "number-of-operations-to-make-network-connected",
+    "title": "Number of Operations to Make Network Connected",
+    "difficulty": "Medium",
+    "topic": "advanced-graphs",
+    "patterns": [],
+    "sheets": [
+      "striver-sde"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/number-of-operations-to-make-network-connected/"
   },
   {
     "id": "reconstruct-itinerary",
@@ -1463,6 +2678,7 @@ export const problems = [
       "dfs"
     ],
     "sheets": [],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/reconstruct-itinerary/"
   },
@@ -1476,6 +2692,7 @@ export const problems = [
       "binary-search"
     ],
     "sheets": [],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/swim-in-rising-water/"
   },
@@ -1488,8 +2705,11 @@ export const problems = [
       "topological-sort"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "striver-sde",
+      "love-babbar"
     ],
+    "source": "leetcode",
     "premium": true,
     "url": "https://leetcode.com/problems/alien-dictionary/"
   },
@@ -1502,8 +2722,11 @@ export const problems = [
       "fibonacci"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "striver-sde",
+      "love-babbar"
     ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/climbing-stairs/"
   },
@@ -1516,6 +2739,7 @@ export const problems = [
       "bottom-up"
     ],
     "sheets": [],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/min-cost-climbing-stairs/"
   },
@@ -1528,8 +2752,11 @@ export const problems = [
       "bottom-up"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "striver-sde",
+      "love-babbar"
     ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/house-robber/"
   },
@@ -1542,8 +2769,11 @@ export const problems = [
       "bottom-up"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "striver-sde",
+      "love-babbar"
     ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/house-robber-ii/"
   },
@@ -1556,8 +2786,11 @@ export const problems = [
       "expand-around-centre"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "striver-sde",
+      "love-babbar"
     ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/longest-palindromic-substring/"
   },
@@ -1572,6 +2805,7 @@ export const problems = [
     "sheets": [
       "blind75"
     ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/palindromic-substrings/"
   },
@@ -1586,6 +2820,7 @@ export const problems = [
     "sheets": [
       "blind75"
     ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/decode-ways/"
   },
@@ -1598,8 +2833,11 @@ export const problems = [
       "unbounded-knapsack"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "striver-sde",
+      "love-babbar"
     ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/coin-change/"
   },
@@ -1612,8 +2850,11 @@ export const problems = [
       "kadane"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "striver-sde",
+      "love-babbar"
     ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/maximum-product-subarray/"
   },
@@ -1626,8 +2867,11 @@ export const problems = [
       "bottom-up"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "striver-sde",
+      "love-babbar"
     ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/word-break/"
   },
@@ -1641,8 +2885,11 @@ export const problems = [
       "binary-search"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "striver-sde",
+      "love-babbar"
     ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/longest-increasing-subsequence/"
   },
@@ -1655,6 +2902,7 @@ export const problems = [
       "0-1-knapsack"
     ],
     "sheets": [],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/partition-equal-subset-sum/"
   },
@@ -1669,6 +2917,7 @@ export const problems = [
     "sheets": [
       "blind75"
     ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/combination-sum-iv/"
   },
@@ -1681,8 +2930,11 @@ export const problems = [
       "grid-dp"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "striver-sde",
+      "love-babbar"
     ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/unique-paths/"
   },
@@ -1694,7 +2946,11 @@ export const problems = [
     "patterns": [
       "lcs"
     ],
-    "sheets": [],
+    "sheets": [
+      "striver-sde",
+      "love-babbar"
+    ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/longest-common-subsequence/"
   },
@@ -1707,6 +2963,7 @@ export const problems = [
       "unbounded-knapsack"
     ],
     "sheets": [],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/coin-change-ii/"
   },
@@ -1719,6 +2976,7 @@ export const problems = [
       "0-1-knapsack"
     ],
     "sheets": [],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/target-sum/"
   },
@@ -1731,6 +2989,7 @@ export const problems = [
       "grid-dp"
     ],
     "sheets": [],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/interleaving-string/"
   },
@@ -1742,9 +3001,97 @@ export const problems = [
     "patterns": [
       "levenshtein"
     ],
-    "sheets": [],
+    "sheets": [
+      "striver-sde",
+      "love-babbar"
+    ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/edit-distance/"
+  },
+  {
+    "id": "minimum-path-sum",
+    "title": "Minimum Path Sum",
+    "difficulty": "Medium",
+    "topic": "dp-2d",
+    "patterns": [
+      "grid-dp"
+    ],
+    "sheets": [
+      "striver-sde",
+      "love-babbar"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/minimum-path-sum/"
+  },
+  {
+    "id": "triangle",
+    "title": "Triangle",
+    "difficulty": "Medium",
+    "topic": "dp-2d",
+    "patterns": [],
+    "sheets": [
+      "striver-sde"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/triangle/"
+  },
+  {
+    "id": "maximal-square",
+    "title": "Maximal Square",
+    "difficulty": "Medium",
+    "topic": "dp-2d",
+    "patterns": [
+      "grid-dp"
+    ],
+    "sheets": [
+      "striver-sde",
+      "love-babbar"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/maximal-square/"
+  },
+  {
+    "id": "longest-palindromic-subsequence",
+    "title": "Longest Palindromic Subsequence",
+    "difficulty": "Medium",
+    "topic": "dp-2d",
+    "patterns": [],
+    "sheets": [
+      "love-babbar"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/longest-palindromic-subsequence/"
+  },
+  {
+    "id": "lemonade-change",
+    "title": "Lemonade Change",
+    "difficulty": "Easy",
+    "topic": "greedy",
+    "patterns": [],
+    "sheets": [
+      "striver-sde"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/lemonade-change/"
+  },
+  {
+    "id": "gfg-minimum-cost-of-ropes",
+    "title": "Minimum Cost of Ropes",
+    "difficulty": "Easy",
+    "topic": "greedy",
+    "patterns": [],
+    "sheets": [
+      "love-babbar"
+    ],
+    "source": "gfg",
+    "premium": false,
+    "url": "https://www.geeksforgeeks.org/problems/minimum-cost-of-ropes-1587115620/1"
   },
   {
     "id": "maximum-subarray",
@@ -1755,8 +3102,11 @@ export const problems = [
       "kadane"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "striver-sde",
+      "love-babbar"
     ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/maximum-subarray/"
   },
@@ -1769,8 +3119,11 @@ export const problems = [
       "greedy"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "striver-sde",
+      "love-babbar"
     ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/jump-game/"
   },
@@ -1783,7 +3136,10 @@ export const problems = [
       "greedy",
       "bfs"
     ],
-    "sheets": [],
+    "sheets": [
+      "striver-sde"
+    ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/jump-game-ii/"
   },
@@ -1796,6 +3152,7 @@ export const problems = [
       "greedy"
     ],
     "sheets": [],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/gas-station/"
   },
@@ -1809,6 +3166,7 @@ export const problems = [
       "counting"
     ],
     "sheets": [],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/hand-of-straights/"
   },
@@ -1821,6 +3179,7 @@ export const problems = [
       "greedy"
     ],
     "sheets": [],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/merge-triplets-to-form-target-triplet/"
   },
@@ -1834,6 +3193,7 @@ export const problems = [
       "intervals"
     ],
     "sheets": [],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/partition-labels/"
   },
@@ -1846,8 +3206,106 @@ export const problems = [
       "greedy"
     ],
     "sheets": [],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/valid-parenthesis-string/"
+  },
+  {
+    "id": "minimum-number-of-arrows-to-burst-balloons",
+    "title": "Minimum Number of Arrows to Burst Balloons",
+    "difficulty": "Medium",
+    "topic": "greedy",
+    "patterns": [],
+    "sheets": [
+      "striver-sde"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/"
+  },
+  {
+    "id": "gfg-n-meetings-in-one-room",
+    "title": "N Meetings in One Room (Activity Selection)",
+    "difficulty": "Medium",
+    "topic": "greedy",
+    "patterns": [],
+    "sheets": [
+      "striver-sde",
+      "love-babbar"
+    ],
+    "source": "gfg",
+    "premium": false,
+    "url": "https://www.geeksforgeeks.org/problems/n-meetings-in-one-room-1587115620/1"
+  },
+  {
+    "id": "gfg-minimum-platforms",
+    "title": "Minimum Platforms",
+    "difficulty": "Medium",
+    "topic": "greedy",
+    "patterns": [],
+    "sheets": [
+      "striver-sde",
+      "love-babbar"
+    ],
+    "source": "gfg",
+    "premium": false,
+    "url": "https://www.geeksforgeeks.org/problems/minimum-platforms-1587115620/1"
+  },
+  {
+    "id": "gfg-job-sequencing-problem",
+    "title": "Job Sequencing Problem",
+    "difficulty": "Medium",
+    "topic": "greedy",
+    "patterns": [],
+    "sheets": [
+      "striver-sde",
+      "love-babbar"
+    ],
+    "source": "gfg",
+    "premium": false,
+    "url": "https://www.geeksforgeeks.org/problems/job-sequencing-problem-1587115620/1"
+  },
+  {
+    "id": "gfg-fractional-knapsack",
+    "title": "Fractional Knapsack",
+    "difficulty": "Medium",
+    "topic": "greedy",
+    "patterns": [],
+    "sheets": [
+      "striver-sde",
+      "love-babbar"
+    ],
+    "source": "gfg",
+    "premium": false,
+    "url": "https://www.geeksforgeeks.org/problems/fractional-knapsack-1587115620/1"
+  },
+  {
+    "id": "gfg-minimize-the-heights",
+    "title": "Minimize the Heights II",
+    "difficulty": "Medium",
+    "topic": "greedy",
+    "patterns": [],
+    "sheets": [
+      "love-babbar"
+    ],
+    "source": "gfg",
+    "premium": false,
+    "url": "https://www.geeksforgeeks.org/problems/minimize-the-heights3351/1"
+  },
+  {
+    "id": "candy",
+    "title": "Candy",
+    "difficulty": "Hard",
+    "topic": "greedy",
+    "patterns": [
+      "greedy"
+    ],
+    "sheets": [
+      "striver-sde"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/candy/"
   },
   {
     "id": "meeting-rooms",
@@ -1860,6 +3318,7 @@ export const problems = [
     "sheets": [
       "blind75"
     ],
+    "source": "leetcode",
     "premium": true,
     "url": "https://leetcode.com/problems/meeting-rooms/"
   },
@@ -1872,8 +3331,10 @@ export const problems = [
       "sweep"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "striver-sde"
     ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/insert-interval/"
   },
@@ -1887,8 +3348,11 @@ export const problems = [
       "sweep"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "striver-sde",
+      "love-babbar"
     ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/merge-intervals/"
   },
@@ -1902,8 +3366,10 @@ export const problems = [
       "sorting"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "striver-sde"
     ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/non-overlapping-intervals/"
   },
@@ -1919,6 +3385,7 @@ export const problems = [
     "sheets": [
       "blind75"
     ],
+    "source": "leetcode",
     "premium": true,
     "url": "https://leetcode.com/problems/meeting-rooms-ii/"
   },
@@ -1930,7 +3397,11 @@ export const problems = [
     "patterns": [
       "xor"
     ],
-    "sheets": [],
+    "sheets": [
+      "striver-sde",
+      "love-babbar"
+    ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/single-number/"
   },
@@ -1945,6 +3416,7 @@ export const problems = [
     "sheets": [
       "blind75"
     ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/number-of-1-bits/"
   },
@@ -1960,6 +3432,7 @@ export const problems = [
     "sheets": [
       "blind75"
     ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/counting-bits/"
   },
@@ -1974,6 +3447,7 @@ export const problems = [
     "sheets": [
       "blind75"
     ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/reverse-bits/"
   },
@@ -1989,6 +3463,7 @@ export const problems = [
     "sheets": [
       "blind75"
     ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/missing-number/"
   },
@@ -2004,6 +3479,7 @@ export const problems = [
     "sheets": [
       "blind75"
     ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/sum-of-two-integers/"
   },
@@ -2015,9 +3491,51 @@ export const problems = [
     "patterns": [
       "overflow"
     ],
-    "sheets": [],
+    "sheets": [
+      "love-babbar"
+    ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/reverse-integer/"
+  },
+  {
+    "id": "single-number-ii",
+    "title": "Single Number II",
+    "difficulty": "Medium",
+    "topic": "bit-manipulation",
+    "patterns": [],
+    "sheets": [
+      "love-babbar"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/single-number-ii/"
+  },
+  {
+    "id": "single-number-iii",
+    "title": "Single Number III",
+    "difficulty": "Medium",
+    "topic": "bit-manipulation",
+    "patterns": [],
+    "sheets": [
+      "love-babbar"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/single-number-iii/"
+  },
+  {
+    "id": "divide-two-integers",
+    "title": "Divide Two Integers",
+    "difficulty": "Medium",
+    "topic": "bit-manipulation",
+    "patterns": [],
+    "sheets": [
+      "striver-sde"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/divide-two-integers/"
   },
   {
     "id": "plus-one",
@@ -2028,6 +3546,7 @@ export const problems = [
       "math"
     ],
     "sheets": [],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/plus-one/"
   },
@@ -2041,8 +3560,22 @@ export const problems = [
       "math"
     ],
     "sheets": [],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/happy-number/"
+  },
+  {
+    "id": "excel-sheet-column-number",
+    "title": "Excel Sheet Column Number",
+    "difficulty": "Easy",
+    "topic": "math-geometry",
+    "patterns": [],
+    "sheets": [
+      "love-babbar"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/excel-sheet-column-number/"
   },
   {
     "id": "rotate-image",
@@ -2053,8 +3586,11 @@ export const problems = [
       "matrix"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "striver-sde",
+      "love-babbar"
     ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/rotate-image/"
   },
@@ -2067,8 +3603,11 @@ export const problems = [
       "matrix"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "striver-sde",
+      "love-babbar"
     ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/spiral-matrix/"
   },
@@ -2081,8 +3620,11 @@ export const problems = [
       "matrix"
     ],
     "sheets": [
-      "blind75"
+      "blind75",
+      "striver-sde",
+      "love-babbar"
     ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/set-matrix-zeroes/"
   },
@@ -2094,7 +3636,10 @@ export const problems = [
     "patterns": [
       "fast-exponentiation"
     ],
-    "sheets": [],
+    "sheets": [
+      "striver-sde"
+    ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/powx-n/"
   },
@@ -2107,6 +3652,7 @@ export const problems = [
       "math"
     ],
     "sheets": [],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/multiply-strings/"
   },
@@ -2120,8 +3666,35 @@ export const problems = [
       "hash-map"
     ],
     "sheets": [],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/detect-squares/"
+  },
+  {
+    "id": "count-primes",
+    "title": "Count Primes",
+    "difficulty": "Medium",
+    "topic": "math-geometry",
+    "patterns": [],
+    "sheets": [
+      "love-babbar"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/count-primes/"
+  },
+  {
+    "id": "gfg-factorials-of-large-numbers",
+    "title": "Factorials of Large Numbers",
+    "difficulty": "Medium",
+    "topic": "math-geometry",
+    "patterns": [],
+    "sheets": [
+      "love-babbar"
+    ],
+    "source": "gfg",
+    "premium": false,
+    "url": "https://www.geeksforgeeks.org/problems/factorials-of-large-numbers2508/1"
   },
   {
     "id": "best-time-to-buy-and-sell-stock-with-cooldown",
@@ -2132,8 +3705,36 @@ export const problems = [
       "state-machine"
     ],
     "sheets": [],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/"
+  },
+  {
+    "id": "best-time-to-buy-and-sell-stock-ii",
+    "title": "Best Time to Buy and Sell Stock II",
+    "difficulty": "Medium",
+    "topic": "dp-hard",
+    "patterns": [],
+    "sheets": [
+      "striver-sde",
+      "love-babbar"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/"
+  },
+  {
+    "id": "partition-array-for-maximum-sum",
+    "title": "Partition Array for Maximum Sum",
+    "difficulty": "Medium",
+    "topic": "dp-hard",
+    "patterns": [],
+    "sheets": [
+      "striver-sde"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/partition-array-for-maximum-sum/"
   },
   {
     "id": "distinct-subsequences",
@@ -2143,7 +3744,10 @@ export const problems = [
     "patterns": [
       "grid-dp"
     ],
-    "sheets": [],
+    "sheets": [
+      "striver-sde"
+    ],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/distinct-subsequences/"
   },
@@ -2156,6 +3760,7 @@ export const problems = [
       "memoised-dfs"
     ],
     "sheets": [],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/longest-increasing-path-in-a-matrix/"
   },
@@ -2168,6 +3773,7 @@ export const problems = [
       "interval-dp"
     ],
     "sheets": [],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/burst-balloons/"
   },
@@ -2180,7 +3786,34 @@ export const problems = [
       "grid-dp"
     ],
     "sheets": [],
+    "source": "leetcode",
     "premium": false,
     "url": "https://leetcode.com/problems/regular-expression-matching/"
+  },
+  {
+    "id": "best-time-to-buy-and-sell-stock-iii",
+    "title": "Best Time to Buy and Sell Stock III",
+    "difficulty": "Hard",
+    "topic": "dp-hard",
+    "patterns": [],
+    "sheets": [
+      "striver-sde"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/"
+  },
+  {
+    "id": "best-time-to-buy-and-sell-stock-iv",
+    "title": "Best Time to Buy and Sell Stock IV",
+    "difficulty": "Hard",
+    "topic": "dp-hard",
+    "patterns": [],
+    "sheets": [
+      "striver-sde"
+    ],
+    "source": "leetcode",
+    "premium": false,
+    "url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/"
   }
 ];

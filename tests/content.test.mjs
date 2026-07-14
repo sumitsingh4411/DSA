@@ -52,8 +52,21 @@ test('within each topic, difficulty never goes backwards', () => {
   }
 });
 
-test('every problem links to leetcode.com', () => {
+test('every problem links to LeetCode or GeeksforGeeks, matching its source', () => {
   for (const p of problems) {
-    assert.match(p.url, /^https:\/\/leetcode\.com\/problems\/[a-z0-9-]+\/$/, `${p.id} has a bad url`);
+    if (p.source === 'leetcode') {
+      assert.match(p.url, /^https:\/\/leetcode\.com\/problems\/[a-z0-9-]+\/$/, `${p.id} has a bad LeetCode url`);
+    } else if (p.source === 'gfg') {
+      assert.match(p.url, /^https:\/\/(?:www\.)?geeksforgeeks\.org\//, `${p.id} has a bad GFG url`);
+    } else {
+      assert.fail(`${p.id} has an unknown source "${p.source}"`);
+    }
+  }
+});
+
+test('GFG problem ids are namespaced so they can never collide with a LeetCode slug', () => {
+  for (const p of problems) {
+    if (p.source === 'gfg') assert.match(p.id, /^gfg-/, `${p.id} should start with gfg-`);
+    if (p.source === 'leetcode') assert.doesNotMatch(p.id, /^gfg-/);
   }
 });

@@ -7,7 +7,7 @@ order: 19
 
 # Math & Geometry
 
-**Tier 4 — Elite** · 8 problems
+**Tier 4 — Elite** · 11 problems
 
 > Matrix rotation, spiral traversal, happy numbers. Rarely deep, frequently fiddly — these are tests of whether you can keep index arithmetic straight without panicking.
 
@@ -15,14 +15,17 @@ order: 19
 | --- | --- | --- | --- |
 | [Plus One](https://leetcode.com/problems/plus-one/) | Easy | math |  |
 | [Happy Number](https://leetcode.com/problems/happy-number/) | Easy | fast-slow, math |  |
-| [Rotate Image](https://leetcode.com/problems/rotate-image/) | Medium | matrix | Blind 75 |
-| [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/) | Medium | matrix | Blind 75 |
-| [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/) | Medium | matrix | Blind 75 |
-| [Pow(x, n)](https://leetcode.com/problems/powx-n/) | Medium | fast-exponentiation |  |
+| [Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number/) | Easy |  | Love Babbar |
+| [Rotate Image](https://leetcode.com/problems/rotate-image/) | Medium | matrix | Blind 75, Striver SDE, Love Babbar |
+| [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/) | Medium | matrix | Blind 75, Striver SDE, Love Babbar |
+| [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/) | Medium | matrix | Blind 75, Striver SDE, Love Babbar |
+| [Pow(x, n)](https://leetcode.com/problems/powx-n/) | Medium | fast-exponentiation | Striver SDE |
 | [Multiply Strings](https://leetcode.com/problems/multiply-strings/) | Medium | math |  |
 | [Detect Squares](https://leetcode.com/problems/detect-squares/) | Medium | design, hash-map |  |
+| [Count Primes](https://leetcode.com/problems/count-primes/) | Medium |  | Love Babbar |
+| [Factorials of Large Numbers](https://www.geeksforgeeks.org/problems/factorials-of-large-numbers2508/1) | Medium |  | Love Babbar |
 
-🔒 = needs a LeetCode Premium subscription.
+🔒 = needs LeetCode Premium. Links go to LeetCode or GeeksforGeeks.
 
 ---
 

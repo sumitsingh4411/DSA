@@ -109,3 +109,34 @@ order: 9
   assert.equal(topic.id, 'tries');
   assert.deepEqual(problems, []);
 });
+
+test('a GeeksforGeeks practice link is accepted and namespaced', () => {
+  const gfgFile = `---
+id: greedy
+name: Greedy
+tier: 3
+order: 16
+---
+
+> Argue why the local choice is globally safe.
+
+| Problem | Difficulty | Patterns | Sheets |
+| --- | --- | --- | --- |
+| [Minimum Platforms](https://www.geeksforgeeks.org/problems/minimum-platforms-1587115620/1) | Medium | greedy | Love Babbar |
+`;
+  const { problems } = parseTopicFile(gfgFile, 'greedy.md');
+  assert.equal(problems[0].id, 'gfg-minimum-platforms');
+  assert.equal(problems[0].source, 'gfg');
+  assert.equal(problems[0].url, 'https://www.geeksforgeeks.org/problems/minimum-platforms-1587115620/1');
+});
+
+test('a LeetCode link keeps its bare slug as id and source leetcode', () => {
+  const { problems } = parseTopicFile(FILE, 'arrays-hashing.md');
+  assert.equal(problems[0].source, 'leetcode');
+  assert.equal(problems[0].id, 'two-sum');
+});
+
+test('a non-LeetCode, non-GFG link is rejected', () => {
+  const bad = FILE.replace('https://leetcode.com/problems/two-sum/', 'https://example.com/two-sum');
+  assert.throws(() => parseTopicFile(bad, 'arrays-hashing.md'), /LeetCode or GeeksforGeeks/i);
+});

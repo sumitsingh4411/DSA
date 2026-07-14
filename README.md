@@ -8,7 +8,7 @@ A DSA roadmap for FAANG interviews — foundations to elite, with the tracking b
 > `base` in `vite.config.js` all assume the repo `sumitgithub1001/Advancedsa`. If yours differs,
 > change those three and run `npm run build:sheets`.
 
-Most sheets hand you a list of links and wish you luck. This one is **ordered** — 153 problems
+Most sheets hand you a list of links and wish you luck. This one is **ordered** — 250 problems
 across 20 topics, arranged so each topic sets up the next — and it tells you **which problem to
 solve today**, so you never open it and stall on where to start.
 
@@ -46,7 +46,7 @@ exactly what most sheets leave out.
 [Math & Geometry](content/19-math-geometry.md) ·
 [Hard DP](content/20-dp-hard.md)
 
-Cross-cutting: **[Blind 75](sheets/blind75.md)** — all 75, on its own.
+Cross-cutting sheets: **[Blind 75](sheets/blind75.md)** · **[Striver SDE](sheets/striver-sde.md)** · **[Love Babbar](sheets/love-babbar.md)** — each on its own.
 
 Fork the repo and every checkbox becomes yours to tick.
 
@@ -75,17 +75,19 @@ paywall by surprise. Skip them without guilt; none is load-bearing.
 
 ```
 content/*.md ──┬──> src/content.generated.js ──> the site
-               └──> sheets/blind75.md
+               └──> sheets/{blind75,striver-sde,love-babbar}.md
 ```
 
 Markdown is a fragile thing to use as a database, so the parser is strict on purpose: a bad
 difficulty, an unknown sheet name, a malformed link, or a row with the wrong number of columns
 throws and names the file and the row. Nothing is ever silently dropped.
 
-On top of that, `npm run validate:links` checks every problem against **LeetCode's own public
-problem index** — so no dead links, no wrong difficulty labels, no wrong premium flags. (Fetching
-the problem pages directly returns 403; LeetCode blocks bots, which makes a page fetch useless as
-a check. The index is the real ground truth.)
+Problems link to **LeetCode or GeeksforGeeks** — Striver and Love Babbar both draw heavily on
+GFG, so LeetCode-only would drop most of those sheets. `npm run validate:links` verifies each one
+at its source: LeetCode problems against **LeetCode's own public problem index** (fetching the
+pages directly returns 403 — LeetCode blocks bots, so a page fetch is useless; the index is the
+real ground truth), and GFG problems with a real HTTP request. No dead links, no wrong difficulty
+labels, no wrong premium flags.
 
 ## Commands
 
@@ -93,7 +95,7 @@ a check. The index is the real ground truth.)
 npm install
 npm run dev             # Vite dev server, opens the browser
 npm run build           # regenerate data, validate, then build to dist/
-npm test                # 72 tests
+npm test                # 76 tests
 npm run validate        # content/ is well-formed
 npm run validate:links  # ...and every problem is real, per LeetCode
 npm run build:sheets    # regenerate sheets/ from content/

@@ -23,6 +23,7 @@ const good = {
   topic: 'arrays-hashing',
   patterns: ['hash-map'],
   sheets: ['blind75'],
+  source: 'leetcode',
   premium: false,
   url: 'https://leetcode.com/problems/two-sum/',
 };

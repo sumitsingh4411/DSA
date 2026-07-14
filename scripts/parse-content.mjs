@@ -18,7 +18,40 @@ const DIFFICULTIES = new Set(['Easy', 'Medium', 'Hard']);
 const PREMIUM_MARK = '🔒';
 const COLUMNS = 4; // Problem | Difficulty | Patterns | Sheets
 
-const LINK = /^\[([^\]]+)\]\((https:\/\/leetcode\.com\/problems\/([a-z0-9-]+)\/?)\)$/;
+// A problem links to LeetCode or to GeeksforGeeks — Striver and Love Babbar both
+// draw heavily on GFG, so LeetCode-only would silently drop most of those sheets.
+const LEETCODE = /^https:\/\/leetcode\.com\/problems\/([a-z0-9-]+)\/?$/;
+const GFG = /^https:\/\/(?:www\.|practice\.)?geeksforgeeks\.org\/[^\s)]+$/;
+const MD_LINK = /^\[([^\]]+)\]\((https:\/\/[^\s)]+)\)$/;
+
+// The id is the problem's identity across sheets, so it must be stable and it must
+// not collide. LeetCode problems key on their slug (unchanged since v1, so existing
+// progress survives). GFG problems key on a slug derived from their URL, namespaced
+// with a gfg- prefix so a LeetCode and a GFG problem can never clash.
+function identify(url, file, rowNumber, fail) {
+  const lc = LEETCODE.exec(url);
+  if (lc) return { id: lc[1], source: 'leetcode', url: url.replace(/\/?$/, '/') };
+
+  if (GFG.test(url)) {
+    // Practice URLs look like .../problems/<slug>/1 — the trailing "1" is the
+    // difficulty tier, not part of the identity. Take the last segment that
+    // isn't a bare number, then strip GFG's trailing numeric id noise.
+    const segments = url
+      .replace(/^https:\/\/(?:www\.|practice\.)?geeksforgeeks\.org\//, '')
+      .replace(/\/+$/, '')
+      .split('/')
+      .filter((s) => s && !/^\d+$/.test(s));
+    const tail = segments.pop() ?? 'unknown';
+    const slug = tail
+      .replace(/\d+$/, '') // drop GFG's numeric suffix (e.g. chocolate-distribution-problem3825)
+      .replace(/[^a-z0-9]+/gi, '-')
+      .replace(/^-+|-+$/g, '')
+      .toLowerCase();
+    return { id: `gfg-${slug}`, source: 'gfg', url };
+  }
+
+  fail(file, rowNumber, `link must be a LeetCode or GeeksforGeeks URL — got "${url}"`);
+}
 
 class ContentError extends Error {}
 
@@ -83,11 +116,12 @@ function parseProblemRow(line, topicId, file, rowNumber) {
   const premium = problemCell.includes(PREMIUM_MARK);
   problemCell = problemCell.replaceAll(PREMIUM_MARK, '').trim();
 
-  const link = LINK.exec(problemCell);
+  const link = MD_LINK.exec(problemCell);
   if (!link) {
-    fail(file, rowNumber, `the Problem cell must be a LeetCode markdown link — got "${problemCell}"`);
+    fail(file, rowNumber, `the Problem cell must be a markdown link [title](url) — got "${problemCell}"`);
   }
-  const [, title, url, slug] = link;
+  const [, title, rawUrl] = link;
+  const { id, source, url } = identify(rawUrl, file, rowNumber, fail);
 
   if (!DIFFICULTIES.has(difficulty)) {
     fail(file, rowNumber, `difficulty must be Easy, Medium or Hard — got "${difficulty}"`);
@@ -110,7 +144,7 @@ function parseProblemRow(line, topicId, file, rowNumber) {
       return id;
     });
 
-  return { id: slug, title, difficulty, topic: topicId, patterns, sheets, premium, url: `${url.replace(/\/?$/, '/')}` };
+  return { id, title, difficulty, topic: topicId, patterns, sheets, source, premium, url };
 }
 
 export function parseTopicFile(text, file) {

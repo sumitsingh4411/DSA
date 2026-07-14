@@ -7,7 +7,7 @@ order: 6
 
 # Prefix Sum
 
-**Tier 1 — Foundations** · 4 problems
+**Tier 1 — Foundations** · 6 problems
 
 > A cheap trick with an enormous payoff: precompute cumulative sums so any range query becomes O(1). Combined with a hash map it solves a whole family of subarray-sum problems that look much harder than they are.
 
@@ -15,10 +15,12 @@ order: 6
 | --- | --- | --- | --- |
 | [Range Sum Query — Immutable](https://leetcode.com/problems/range-sum-query-immutable/) | Easy | prefix-sum, design |  |
 | [Find Pivot Index](https://leetcode.com/problems/find-pivot-index/) | Easy | prefix-sum |  |
+| [Subarray with 0 Sum](https://www.geeksforgeeks.org/problems/subarray-with-0-sum-1587115621/1) | Easy |  | Love Babbar |
 | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/) | Medium | prefix-sum, hash-map |  |
 | [Contiguous Array](https://leetcode.com/problems/contiguous-array/) | Medium | prefix-sum, hash-map |  |
+| [Subarray Sums Divisible by K](https://leetcode.com/problems/subarray-sums-divisible-by-k/) | Medium |  | Striver SDE |
 
-🔒 = needs a LeetCode Premium subscription.
+🔒 = needs LeetCode Premium. Links go to LeetCode or GeeksforGeeks.
 
 ---
 
