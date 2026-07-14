@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Advancedsa — DSA, foundations to elite</title>
+    <meta
+      name="description"
+      content="A worked roadmap from beginner to advanced DSA, built on Blind 75. Tracks what you have solved and tells you what to solve next."
+    />
+    <link rel="stylesheet" href="assets/app.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect width='16' height='16' rx='3' fill='%2310131a'/><rect x='6.5' y='3' width='3' height='10' rx='1.5' fill='%23e8a33d'/></svg>"
+    />
+  </head>
+  <body>
+    <a class="skip" href="#list">Skip to problems</a>
+
+    <header class="topbar">
+      <div class="wrap topbar__inner">
+        <div class="brand">
+          <span class="brand__mark" aria-hidden="true"></span>
+          <span class="brand__name">Advancedsa</span>
+        </div>
+
+        <div class="views" role="tablist" aria-label="Group problems by">
+          <button role="tab" class="views__btn is-on" data-view="topic" aria-selected="true">Topic</button>
+          <button role="tab" class="views__btn" data-view="sheet" aria-selected="false">Sheet</button>
+        </div>
+
+        <div class="topbar__right">
+          <output class="tally" id="tally" aria-live="polite"></output>
+          <button class="icon" id="export" title="Save progress to a file">Export</button>
+          <button class="icon" id="import" title="Load progress from a file">Import</button>
+          <button class="icon" id="theme" title="Switch theme" aria-label="Switch theme">◐</button>
+          <input type="file" id="file" accept="application/json,.json" hidden />
+        </div>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <p class="notice" id="notice" role="status" hidden></p>
+
+      <section class="next" id="next" aria-labelledby="next-h">
+        <h2 class="eyebrow" id="next-h">Solve next</h2>
+        <!-- rendered by ui.js -->
+      </section>
+
+      <section class="meter" id="meter" aria-label="Your progress">
+        <!-- rendered by ui.js -->
+      </section>
+
+      <section class="filters" aria-label="Filter problems">
+        <input
+          class="filters__search"
+          id="search"
+          type="search"
+          placeholder="Search a problem or a pattern…"
+          aria-label="Search problems"
+        />
+
+        <div class="chips" role="group" aria-label="Difficulty">
+          <button class="chip" data-difficulty="Easy">Easy</button>
+          <button class="chip" data-difficulty="Medium">Medium</button>
+          <button class="chip" data-difficulty="Hard">Hard</button>
+        </div>
+
+        <div class="chips" role="group" aria-label="Status">
+          <button class="chip is-on" data-status="all">All</button>
+          <button class="chip" data-status="unsolved">To do</button>
+          <button class="chip" data-status="solved">Done</button>
+          <button class="chip" data-status="starred">Starred</button>
+        </div>
+      </section>
+
+      <div id="list" class="list" tabindex="-1"></div>
+    </main>
+
+    <footer class="foot wrap">
+      <p>
+        Progress lives in this browser only. <button class="linkish" id="export2">Export it</button> before
+        you switch machines.
+      </p>
+      <p class="foot__keys">
+        <kbd>/</kbd> search · <kbd>j</kbd><kbd>k</kbd> move · <kbd>x</kbd> mark solved · <kbd>s</kbd> star
+      </p>
+    </footer>
+
+    <script type="module" src="assets/app.js"></script>
+  </body>
+</html>
