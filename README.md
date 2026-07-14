@@ -4,87 +4,116 @@ A DSA roadmap for FAANG interviews — foundations to elite, with the tracking b
 
 **[▶ Open the site](https://sumitgithub1001.github.io/Advancedsa/)**
 
-> **Before you publish:** the site URL above and the one in `scripts/build-sheets.mjs`
-> (the `SITE` constant) assume the GitHub username `sumitgithub1001`. If yours is
-> different, change that one constant and run `npm run build:sheets`.
+> **Before you publish:** the URL above, the `SITE` constant in `scripts/build-sheets.mjs`, and
+> `base` in `vite.config.js` all assume the repo `sumitgithub1001/Advancedsa`. If yours differs,
+> change those three and run `npm run build:sheets`.
 
-Most sheets hand you a list of links and wish you luck. This one is ordered — 153 problems
-across 20 topics, arranged so each topic sets up the next — and it tells you which problem to
-solve today so you never open it and wonder where to start.
+Most sheets hand you a list of links and wish you luck. This one is **ordered** — 153 problems
+across 20 topics, arranged so each topic sets up the next — and it tells you **which problem to
+solve today**, so you never open it and stall on where to start.
 
-## What's here
+## The roadmap
 
-**A roadmap, not a pile.** Four tiers, in the order a person actually learns them:
+Every topic is a markdown file you can read right here on GitHub. Each opens with **what
+interviewers are actually testing** — the thing you need to say out loud in the room, which is
+exactly what most sheets leave out.
 
-| Tier | | Topics |
-|---|---|---|
-| **1** | Foundations | Arrays & Hashing · Two Pointers · Sliding Window · Stack · Binary Search · Prefix Sum |
-| **2** | Core | Linked List · Trees · Tries · Heap / Priority Queue · Backtracking |
-| **3** | Advanced | Graphs · Advanced Graphs · 1-D DP · 2-D DP · Greedy · Intervals |
-| **4** | Elite | Bit Manipulation · Math & Geometry · Hard DP |
+**Tier 1 — Foundations**
+[Arrays & Hashing](content/01-arrays-hashing.md) ·
+[Two Pointers](content/02-two-pointers.md) ·
+[Sliding Window](content/03-sliding-window.md) ·
+[Stack](content/04-stack.md) ·
+[Binary Search](content/05-binary-search.md) ·
+[Prefix Sum](content/06-prefix-sum.md)
 
-**What interviewers are actually testing.** Every topic opens with it. Not "arrays are a data
-structure" — the thing you need to say out loud in the room to show you understand *why* the
-problem was chosen.
+**Tier 2 — Core**
+[Linked List](content/07-linked-list.md) ·
+[Trees](content/08-trees.md) ·
+[Tries](content/09-tries.md) ·
+[Heap / Priority Queue](content/10-heap-priority-queue.md) ·
+[Backtracking](content/11-backtracking.md)
 
-**All 75 of Blind 75**, plus the topic spine that fills the gaps Blind 75 leaves thin.
+**Tier 3 — Advanced**
+[Graphs](content/12-graphs.md) ·
+[Advanced Graphs](content/13-advanced-graphs.md) ·
+[1-D DP](content/14-dp-1d.md) ·
+[2-D DP](content/15-dp-2d.md) ·
+[Greedy](content/16-greedy.md) ·
+[Intervals](content/17-intervals.md)
 
-## Read it here, or track it on the site
+**Tier 4 — Elite**
+[Bit Manipulation](content/18-bit-manipulation.md) ·
+[Math & Geometry](content/19-math-geometry.md) ·
+[Hard DP](content/20-dp-hard.md)
 
-**Read it on GitHub:**
+Cross-cutting: **[Blind 75](sheets/blind75.md)** — all 75, on its own.
 
-- **[The roadmap](sheets/by-topic.md)** — all 153, by topic, beginner to advanced. Start here.
-- **[Blind 75](sheets/blind75.md)** — the classic list on its own.
+Fork the repo and every checkbox becomes yours to tick.
 
-Fork the repo and the checkboxes become yours to tick.
+## Or use the site
 
-**Or use the site**, which additionally: tells you your next three problems, tracks solved and
-starred, filters by difficulty and status, and shows a rail down the page that fills as you climb.
+Same problems, but it also tells you your next three, tracks solved and starred, filters by
+difficulty and status, and runs a rail down the page that fills as you climb.
 
-Progress is saved in your browser — no account, no server, nothing to sign up for. Use **Export**
-to move it to another machine.
+Progress is saved in your browser — no account, no server. **Export** moves it between machines.
 
 ## How to use it
 
-Do the tiers in order. Tier 1 is not optional, and it is not beneath you: interviewers open with
-it, and the instinct it builds ("reach for a hash map before a nested loop") is what the harder
-tiers are built on.
+Do the tiers in order. Tier 1 is not beneath you: interviewers open with it, and the instinct it
+builds — *reach for a hash map before a nested loop* — is what the harder tiers stand on.
 
 Inside a topic, go Easy → Medium → Hard. If a problem takes more than 45 minutes, read the
-solution, understand it, star it, and come back in a week. Grinding a problem you cannot see the
-shape of teaches you nothing except that you can suffer.
+solution, understand it, star it, come back in a week. Grinding a problem whose shape you cannot
+see teaches you only that you can suffer.
 
-Seven problems are marked `premium` — they need a LeetCode subscription. They're flagged so you
-don't hit a paywall by surprise. Skip them without guilt; none is load-bearing.
+Seven problems are marked 🔒 — they need LeetCode Premium. They're flagged so you don't hit a
+paywall by surprise. Skip them without guilt; none is load-bearing.
 
 ## How the data works
 
-`data/problems.json` is the single source of truth. Everything else is derived from it:
+**`content/*.md` is the source of truth.** You edit it by hand. Everything else is generated:
 
 ```
-data/problems.json ──┬──> the site (index.html + assets/)
-                     └──> sheets/*.md  (generated — never edit these by hand)
+content/*.md ──┬──> src/content.generated.js ──> the site
+               └──> sheets/blind75.md
 ```
 
-Every problem's slug, difficulty and premium flag is checked against LeetCode's own public
-problem index, so nothing here is a dead link or a wrong label.
+Markdown is a fragile thing to use as a database, so the parser is strict on purpose: a bad
+difficulty, an unknown sheet name, a malformed link, or a row with the wrong number of columns
+throws and names the file and the row. Nothing is ever silently dropped.
+
+On top of that, `npm run validate:links` checks every problem against **LeetCode's own public
+problem index** — so no dead links, no wrong difficulty labels, no wrong premium flags. (Fetching
+the problem pages directly returns 403; LeetCode blocks bots, which makes a page fetch useless as
+a check. The index is the real ground truth.)
+
+## Commands
 
 ```bash
-npm test                # the logic: 51 tests, no dependencies
-npm run validate        # data integrity
-npm run validate:links  # ...plus verify every problem against LeetCode
-npm run build:sheets    # regenerate sheets/ from the data
-npm run serve           # http://localhost:8000
+npm install
+npm run dev             # Vite dev server, opens the browser
+npm run build           # regenerate data, validate, then build to dist/
+npm test                # 72 tests
+npm run validate        # content/ is well-formed
+npm run validate:links  # ...and every problem is real, per LeetCode
+npm run build:sheets    # regenerate sheets/ from content/
 ```
 
-The site is plain HTML, CSS and vanilla ES modules. No framework, no bundler, no runtime
-dependencies. It does need to be *served* rather than opened from disk — browsers block ES
-modules on `file://` — which `npm run serve` handles, and GitHub Pages handles for free.
+## Adding a problem
 
-## Adding the other sheets
+Add a row to the right file in `content/`:
 
-Striver's SDE sheet and Love Babbar's sheet slot in by adding `"striver-sde"` or `"love-babbar"`
-to a problem's `sheets` array (and adding any problems that aren't here yet). Problem ids are
-permanent, so extending the dataset never disturbs progress anyone has already made.
+```markdown
+| [Two Sum](https://leetcode.com/problems/two-sum/) | Easy | hash-map | Blind 75 |
+```
 
-Run `npm run validate:links` before committing. It will refuse anything that isn't real.
+Columns are **Problem · Difficulty · Patterns · Sheets**. Add 🔒 after the link if it needs
+Premium. Keep each topic ordered Easy → Medium → Hard (a test enforces it). Then:
+
+```bash
+npm run build:data && npm run validate:links && npm run build:sheets
+```
+
+Striver's SDE sheet and Love Babbar's sheet slot in the same way — put `Striver SDE` or
+`Love Babbar` in the Sheets column. Problem ids come from the LeetCode slug and never change, so
+extending the dataset never disturbs progress anyone has already made.

@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { createProgress } from '../assets/progress.js';
+import { createProgress } from '../src/progress.js';
 
 function fakeStorage(initial = {}) {
   const map = new Map(Object.entries(initial));

@@ -5,10 +5,16 @@
   "type": "module",
   "description": "A DSA roadmap for FAANG interviews — foundations to elite, with tracking built in.",
   "scripts": {
-    "test": "node --test 'tests/*.test.mjs'",
+    "dev": "npm run build:data && vite",
+    "build": "npm run build:data && npm run validate && vite build",
+    "preview": "vite preview",
+    "build:data": "node scripts/parse-content.mjs",
+    "build:sheets": "node scripts/build-sheets.mjs",
     "validate": "node scripts/validate.mjs",
     "validate:links": "node scripts/validate.mjs --check-links",
-    "build:sheets": "node scripts/build-sheets.mjs",
-    "serve": "python3 -m http.server 8000"
+    "test": "npm run build:data && node --test 'tests/*.test.mjs'"
+  },
+  "devDependencies": {
+    "vite": "^7.1.5"
   }
 }

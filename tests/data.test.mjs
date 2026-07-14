@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { groupByTopic, groupBySheet, SHEETS } from '../assets/data.js';
+import { groupByTopic, groupBySheet, SHEETS } from '../src/data.js';
 
 const topics = [
   { id: 'graphs', name: 'Graphs', tier: 3, order: 12 },

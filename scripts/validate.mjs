@@ -1,11 +1,15 @@
 #!/usr/bin/env node
-import { readFile } from 'node:fs/promises';
+/**
+ * The gate. content/*.md is hand-edited, so this is what stops a typo there
+ * from reaching the site.
+ */
+import { loadContent } from './parse-content.mjs';
 
 const DIFFICULTIES = new Set(['Easy', 'Medium', 'Hard']);
-const REQUIRED = ['id', 'title', 'difficulty', 'topic', 'patterns', 'sheets', 'url'];
-
-// A sheet with a canonical, fixed size. Guards against silent omissions.
 const SHEET_SIZES = { blind75: 75 };
+
+const LEETCODE_INDEX = 'https://leetcode.com/api/problems/all/';
+const LEVEL = { 1: 'Easy', 2: 'Medium', 3: 'Hard' };
 
 export function validateData(topics, problems, { checkSheetCounts = false } = {}) {
   const errors = [];
@@ -15,28 +19,18 @@ export function validateData(topics, problems, { checkSheetCounts = false } = {}
   for (const p of problems) {
     const where = p.id ?? p.title ?? '<unnamed>';
 
-    for (const field of REQUIRED) {
-      if (p[field] === undefined) errors.push(`${where}: missing required field "${field}"`);
-    }
-    if (p.id !== undefined) {
-      if (seen.has(p.id)) errors.push(`duplicate id "${p.id}"`);
-      seen.add(p.id);
-      if (!/^[a-z0-9]+(-[a-z0-9]+)*$/.test(p.id)) errors.push(`${where}: id must be kebab-case`);
-    }
-    if (p.topic !== undefined && !topicIds.has(p.topic)) {
-      errors.push(`${where}: unknown topic "${p.topic}"`);
-    }
-    if (p.difficulty !== undefined && !DIFFICULTIES.has(p.difficulty)) {
-      errors.push(`${where}: difficulty must be Easy, Medium or Hard (got "${p.difficulty}")`);
-    }
-    if (p.url !== undefined && !/^https:\/\/\S+$/.test(p.url)) {
-      errors.push(`${where}: url must be an https URL (got "${p.url}")`);
-    }
-    if (p.patterns !== undefined && !Array.isArray(p.patterns)) {
-      errors.push(`${where}: patterns must be an array`);
-    }
-    if (p.sheets !== undefined && !Array.isArray(p.sheets)) {
-      errors.push(`${where}: sheets must be an array`);
+    if (seen.has(p.id)) errors.push(`duplicate id "${p.id}"`);
+    seen.add(p.id);
+
+    if (!/^[a-z0-9]+(-[a-z0-9]+)*$/.test(p.id)) errors.push(`${where}: id must be kebab-case`);
+    if (!topicIds.has(p.topic)) errors.push(`${where}: unknown topic "${p.topic}"`);
+    if (!DIFFICULTIES.has(p.difficulty)) errors.push(`${where}: bad difficulty "${p.difficulty}"`);
+    if (!/^https:\/\/\S+$/.test(p.url)) errors.push(`${where}: url must be https (got "${p.url}")`);
+  }
+
+  for (const t of topics) {
+    if (!t.insight || t.insight.length < 20) {
+      errors.push(`topic "${t.id}": the insight blockquote is missing or too short to be useful`);
     }
   }
 
@@ -52,19 +46,13 @@ export function validateData(topics, problems, { checkSheetCounts = false } = {}
   return { errors };
 }
 
-const LEETCODE_INDEX = 'https://leetcode.com/api/problems/all/';
-const LEVEL = { 1: 'Easy', 2: 'Medium', 3: 'Hard' };
-
-// Fetching each problem page directly returns 403 — LeetCode blocks non-browser
-// agents, which makes "did it 200?" useless as a signal. The public problem index
-// is the actual ground truth: it tells us whether a slug exists at all, and what
-// its real title and difficulty are.
+// Fetching each problem page returns 403 — LeetCode blocks non-browser agents,
+// which makes "did it 200?" useless as a signal. The public problem index is the
+// real ground truth: whether a slug exists, and its true difficulty and paywall.
 async function checkAgainstLeetCode(problems) {
   const errors = [];
   const res = await fetch(LEETCODE_INDEX);
-  if (!res.ok) {
-    return [`could not reach the LeetCode problem index (HTTP ${res.status}) — cannot verify links`];
-  }
+  if (!res.ok) return [`could not reach the LeetCode index (HTTP ${res.status}) — cannot verify`];
 
   const body = await res.json();
   const canonical = new Map(
@@ -81,11 +69,12 @@ async function checkAgainstLeetCode(problems) {
       continue;
     }
     if (real.difficulty !== p.difficulty) {
-      errors.push(`${p.id}: difficulty is ${real.difficulty} on LeetCode, we say ${p.difficulty}`);
+      errors.push(`${p.id}: LeetCode says ${real.difficulty}, content/ says ${p.difficulty}`);
     }
     if (real.premium !== Boolean(p.premium)) {
       errors.push(
-        `${p.id}: premium flag is wrong (LeetCode says premium=${real.premium}, we say ${Boolean(p.premium)})`,
+        `${p.id}: LeetCode says premium=${real.premium}, content/ says ${Boolean(p.premium)} ` +
+          `(add or remove the 🔒 marker)`,
       );
     }
   }
@@ -94,8 +83,7 @@ async function checkAgainstLeetCode(problems) {
 
 async function main() {
   const root = new URL('../', import.meta.url);
-  const topics = JSON.parse(await readFile(new URL('data/topics.json', root), 'utf8'));
-  const problems = JSON.parse(await readFile(new URL('data/problems.json', root), 'utf8'));
+  const { topics, problems } = await loadContent(new URL('content/', root));
 
   const { errors } = validateData(topics, problems, { checkSheetCounts: true });
   if (process.argv.includes('--check-links')) {
@@ -103,11 +91,11 @@ async function main() {
   }
 
   if (errors.length) {
-    console.error(`\n${errors.length} problem(s) found:\n`);
+    console.error(`\n${errors.length} problem(s) in content/:\n`);
     for (const e of errors) console.error(`  ✗ ${e}`);
     process.exit(1);
   }
-  console.log(`✓ ${problems.length} problems across ${topics.length} topics — all valid`);
+  console.log(`✓ ${problems.length} problems across ${topics.length} topics — content/ is valid`);
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) await main();

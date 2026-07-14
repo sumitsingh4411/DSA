@@ -12,20 +12,24 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
+          cache: npm
+
+      - run: npm ci
 
       - name: Tests
         run: npm test
 
-      - name: Data integrity
+      - name: content/ is valid
         run: npm run validate
 
       - name: Every problem is real (checked against LeetCode)
         run: npm run validate:links
 
-      # The markdown sheets are generated. If they drift from the data, the repo
-      # starts telling two different stories — so fail rather than let that happen.
-      - name: sheets/ is in sync with the data
+      # src/content.generated.js and sheets/ are both derived from content/*.md.
+      # If either drifts, the repo starts telling two different stories.
+      - name: Generated files are in sync with content/
         run: |
+          npm run build:data
           npm run build:sheets
-          git diff --exit-code sheets/ \
-            || { echo "::error::sheets/ is stale — run 'npm run build:sheets' and commit the result"; exit 1; }
+          git diff --exit-code src/content.generated.js sheets/ \
+            || { echo "::error::Generated files are stale — run 'npm run build:data && npm run build:sheets' and commit"; exit 1; }

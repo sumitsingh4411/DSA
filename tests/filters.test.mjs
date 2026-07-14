@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { applyFilters, emptyFilterState } from '../assets/filters.js';
+import { applyFilters, emptyFilterState } from '../src/filters.js';
 
 const problems = [
   { id: 'two-sum', title: 'Two Sum', difficulty: 'Easy', topic: 'arrays-hashing', patterns: ['hash-map'], sheets: ['blind75'] },

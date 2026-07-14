@@ -1,4 +1,6 @@
-import { loadData, groupByTopic, groupBySheet } from './data.js';
+import './app.css';
+import { problems, topics } from './content.generated.js';
+import { groupByTopic, groupBySheet } from './data.js';
 import { createProgress } from './progress.js';
 import { applyFilters, emptyFilterState } from './filters.js';
 import * as ui from './ui.js';
@@ -7,8 +9,6 @@ const $ = (sel) => document.querySelector(sel);
 
 const progress = createProgress(window.localStorage);
 const state = { view: 'topic', filters: emptyFilterState() };
-
-const { problems, topics } = await loadData();
 
 const handlers = {
   onToggleSolved(id) {

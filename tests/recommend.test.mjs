@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { nextProblems, roadmapOrder } from '../assets/recommend.js';
+import { nextProblems, roadmapOrder } from '../src/recommend.js';
 
 const topics = [
   { id: 'arrays-hashing', tier: 1, order: 1 },
