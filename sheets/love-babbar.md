@@ -127,4 +127,4 @@
 
 ---
 
-Track your progress interactively: **[open the site](https://sumitgithub1001.github.io/Advancedsa/)**
+Track your progress interactively: **[open the site](https://sumitsingh4411.github.io/DSA/)**

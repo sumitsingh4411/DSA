@@ -2,11 +2,11 @@
 
 A DSA roadmap for FAANG interviews — foundations to elite, with the tracking built in.
 
-**[▶ Open the site](https://sumitgithub1001.github.io/Advancedsa/)**
+**[▶ Open the site](https://sumitsingh4411.github.io/DSA/)**
 
-> **Before you publish:** the URL above, the `SITE` constant in `scripts/build-sheets.mjs`, and
-> `base` in `vite.config.js` all assume the repo `sumitgithub1001/Advancedsa`. If yours differs,
-> change those three and run `npm run build:sheets`.
+> Once GitHub Pages finishes its first build, the site is live at the link above. If you ever
+> rename the repo, update the `SITE` constant in `scripts/build-sheets.mjs` and `base` in
+> `vite.config.js` to match, then run `npm run build:sheets`.
 
 Most sheets hand you a list of links and wish you luck. This one is **ordered** — 251 problems
 across 20 topics, arranged so each topic sets up the next — and it tells you **which problem to
