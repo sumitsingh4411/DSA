@@ -11,7 +11,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '22'
           cache: npm
 
       - run: npm ci
@@ -21,9 +21,6 @@ jobs:
 
       - name: content/ is valid
         run: npm run validate
-
-      - name: Every problem is real (checked against LeetCode)
-        run: npm run validate:links
 
       # src/content.generated.js and sheets/ are both derived from content/*.md.
       # If either drifts, the repo starts telling two different stories.

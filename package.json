@@ -12,7 +12,7 @@
     "build:sheets": "node scripts/build-sheets.mjs",
     "validate": "node scripts/validate.mjs",
     "validate:links": "node scripts/validate.mjs --check-links",
-    "test": "npm run build:data && node --test 'tests/*.test.mjs'"
+    "test": "npm run build:data && node --test tests/*.test.mjs"
   },
   "devDependencies": {
     "vite": "^7.1.5"

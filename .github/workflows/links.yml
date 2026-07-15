@@ -1,0 +1,23 @@
+name: links
+
+# The link check calls LeetCode and GeeksforGeeks live, so it can't be a
+# per-push gate — external rate limits from CI would red-X unrelated commits.
+# It runs weekly and on demand instead, which is the right cadence for catching
+# a problem that got renamed or removed upstream.
+on:
+  schedule:
+    - cron: '0 6 * * 1' # Mondays, 06:00 UTC
+  workflow_dispatch:
+
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - name: Every problem still resolves at its source
+        run: npm run validate:links
